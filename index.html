@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SPECTRA</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Artboard 3.png" alt="bar" class="bar">
+            <img src="Artboard 1.png" alt="img" class="img">
+            <h1>SPECTRA</h1>
+        </div>
+    </div>
+
+    <div class="glassy-overlay"></div>
+    <canvas></canvas>
+
+    <h2>About Us</h2>
+
+    <!-- Text Effect Wrapper -->
+    <div class="wrapper">
+        <div id="app"></div>
+    </div>
+
+    <script src="./experiment.js"></script>
+    <script>
+        var app = document.getElementById('app');
+        var typewriter = new Typewriter(app, {
+            loop: false,
+            delay: 75,
+            cursor: ''
+        });
+
+        typewriter
+            .typeString('We are 29 students who want to showcase what we have learnt in the culmination of our three-year journey of BFA in Digital Arts at the University of Malta, which led us to create projects that include diverse topics such as human rights, history and culture, mental health, AI, and even questions the idea of art itself. Join us for our exhibition to experience various mediums of digital art, like editorial and graphic design, animation, photography, UI/UX design, mixed media, illustrations, fashion design, VR and video editing. SPECTRA is a chance for everyone to enjoy the unique perspectives and innovative approaches each student brings to their work, where the endless possibilities of digital art take shape.')
+            .start();
+    </script>
+    <a href="page2.html" class="next-page-button">></a>
+</body>
+
+</html>
