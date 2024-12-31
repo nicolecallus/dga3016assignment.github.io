@@ -68,6 +68,25 @@ h2 {
     transform: translateY(150px);
 }
 
+/* photo - logo*/
+.logo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: left;
+    object-fit: cover;
+    transform: translateY(150px);
+    top: 10px;
+    left: 10px;
+}
+
 /* mobile - Responsive adjustments */
 @media (max-width: 768px) {
     .content {
