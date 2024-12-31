@@ -16,11 +16,26 @@ body {
     background: #000;
 }
 
+
+/* Elisa Carabott - title*/
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* out of the ordinary - title*/
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+}
+
+/* circle */
 .circle-background {
     position: absolute;
-    width: 880px;
-    height: 880px;
-    background: #f5f5f5;
+    width: 920px;
+    height: 920px;
+    background: #e7e4d1;
     border-radius: 50%;
     left: 50%;
     top: -5%;
@@ -35,13 +50,40 @@ body {
     color: #000;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+
+/* photo - elisacarabott*/
+.elisa {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
 }
 
-h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #333;
+.elisa img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    transform: translateY(150px);
+}
+
+/* mobile - Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        padding-top: 10vh;
+        /* Slightly less padding on mobile */
+    }
+
+    .profile-image {
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
