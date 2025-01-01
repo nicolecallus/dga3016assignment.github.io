@@ -1,14 +1,15 @@
 body{
+    background-color: black;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color:black;
+    font-family: 'Arial', sans-serif; 
+    
    
 }
 
 
 
-.content {
+.container {
     
     background-color: #e7e4d1;
 
@@ -17,10 +18,7 @@ body{
 
 
 
-
-
-
-#heading .content h1{
+.container .content h1{
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 5px;
@@ -33,5 +31,4 @@ body{
  
   
 }
-
 
