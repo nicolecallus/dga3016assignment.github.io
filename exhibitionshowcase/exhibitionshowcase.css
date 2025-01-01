@@ -86,7 +86,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #e7e4d1;
+    color: #e7e4d1;
 }
 
 .header {
