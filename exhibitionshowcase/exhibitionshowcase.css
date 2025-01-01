@@ -1,8 +1,10 @@
 body{
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
     background-color:black;
-    
-}x
+   
+}
 
 
 /* 
@@ -81,7 +83,7 @@ body{
 } */ 
 
 
-.container {
+.content {
    
     background-color: #e7e4d1;
 }
@@ -105,7 +107,7 @@ body{
     margin-top: 7rem;
 }
 
-h2{
+#heading .content h1{
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 5px;
