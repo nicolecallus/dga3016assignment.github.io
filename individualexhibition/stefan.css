@@ -92,14 +92,14 @@ h2 {
 }
 
 /* stefan - image */
-.elisa {
+.stefan {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
 
-.elisa img {
+.stefan img {
     width: 100%;
     height: auto;
     display: block;
