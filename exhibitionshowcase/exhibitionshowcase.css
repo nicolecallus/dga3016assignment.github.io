@@ -84,23 +84,28 @@ body{
 
 
 .content {
-   
+    
     background-color: #e7e4d1;
+
 }
 
 
 
 
-.centered-title {
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 7rem;
-}
+
 
 #heading .content h1{
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 5px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-transform: uppercase;
+    text-align: center;
+
+
+ 
+  
 }
+
+
