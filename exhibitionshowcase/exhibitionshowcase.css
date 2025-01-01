@@ -88,18 +88,8 @@ body{
     background-color: #e7e4d1;
 }
 
-.header {
-    width: 100%;
-}
 
-.text-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15%;
-}
+
 
 .centered-title {
     text-align: center;
