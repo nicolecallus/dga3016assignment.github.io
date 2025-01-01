@@ -16,20 +16,6 @@ body {
     background: #000;
 }
 
-
-/* Elisa Carabott - title*/
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/* out of the ordinary - title*/
-h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #333;
-}
-
 /* circle */
 .circle-background {
     position: absolute;
@@ -46,17 +32,53 @@ h2 {
     position: relative;
     z-index: 1;
     padding: 20px;
-    text-align: center;
     color: #000;
 }
 
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
 
-/* photo - elisacarabott*/
+/* logo */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.titles {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+/* Elisa Carabott - title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* out of the ordinary - title */
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #333;
+}
+
+/* elisa - image */
 .elisa {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto 2rem;
-    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .elisa img {
@@ -65,37 +87,19 @@ h2 {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    transform: translateY(150px);
+    transform: translateY(50px);
 }
 
-/* photo - logo*/
-.logo {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    overflow: hidden;
-}
 
-.logo img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: left;
-    object-fit: cover;
-    transform: translateY(150px);
-    top: 10px;
-    left: 10px;
-}
-
-/* mobile - Responsive adjustments */
+/* for mobile */
 @media (max-width: 768px) {
-    .content {
-        padding-top: 10vh;
-        /* Slightly less padding on mobile */
+    .header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .profile-image {
-        max-width: 400px;
+    .logo {
+        margin-bottom: 20px;
     }
 
     h1 {
