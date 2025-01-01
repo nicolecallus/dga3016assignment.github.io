@@ -106,3 +106,10 @@ body {
     margin-bottom: 2rem;
     margin-top: 7rem;
 }
+
+h2{
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
