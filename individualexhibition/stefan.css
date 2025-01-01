@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* dimensions of page 1 */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+/* circle */
+.circle-background {
+    position: absolute;
+    width: 970px;
+    height: 970px;
+    background: #e7e4d1;
+    border-radius: 50%;
+    left: 50%;
+    top: -5%;
+    transform: translateX(-50%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #000;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* logo */
+.logo {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 15px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* bar */
+.bar {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    right: 15px;
+}
+
+.bar img {
+    width: 100%;
+    height: auto;
+}
+
+.titles {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+/* Stefan Mizzi - title */
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* out of the ordinary - title */
+h2 {
+    font-size: 2.0rem;
+    font-weight: normal;
+    color: #333;
+}
+
+/* stefan - image */
+.elisa {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.elisa img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    transform: translateY(50px);
+}
+
+
+/* dimensions of page 2 */
+.container2 .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e4d1;
+}
+
+.header {
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.centered-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+}
+
+.description {
+    text-align: justify;
+    font-size: 2.3rem;
+    font-weight: normal;
+    color: #333;
+    max-width: 120%;
+    margin-left: -20rem;
+    margin-right: -20rem;
+    margin-top: 2rem;
+}
+
+
+
+/* dimensions of page 3 */
+.container3 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+
+/* photo gallery */
+#about .photo-gallery {
+    flex: 1;
+    max-width: 80%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#about .photo-gallery img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#about .photo-gallery img.active {
+    opacity: 1;
+}
+
+/* About Section */
+#about {
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+#about .about-text,
+#about .photo-gallery {
+    max-width: 100%;
+    /* Full width */
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* for mobile */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
