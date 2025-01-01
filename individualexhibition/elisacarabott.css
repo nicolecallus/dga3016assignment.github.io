@@ -162,7 +162,7 @@ h2 {
 /* photo gallery */
 #about .photo-gallery {
     flex: 1;
-    max-width: 50%;
+    max-width: 80%;
     position: relative;
     height: 400px;
     overflow: hidden;
@@ -197,9 +197,6 @@ h2 {
     /* Full width */
     text-align: center;
 }
-
-
-
 
 
 
