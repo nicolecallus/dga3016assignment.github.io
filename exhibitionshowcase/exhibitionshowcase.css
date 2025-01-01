@@ -88,10 +88,10 @@ body {
 
 
 .content {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #e7e4d1;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #000;
 }
 
 .header {
