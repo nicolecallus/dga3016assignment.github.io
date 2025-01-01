@@ -1,9 +1,8 @@
 body{
-    margin: 0;
-    padding: 0;
+
     background-color:black;
     
-}
+}x
 
 
 /* 
@@ -83,10 +82,8 @@ body{
 
 
 .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #e7e4d1;
+   
+    background-color: #e7e4d1;
 }
 
 .header {
