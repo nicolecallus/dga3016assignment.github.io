@@ -160,44 +160,76 @@ h2 {
 
 
 /* photo gallery */
-#about .photo-gallery {
-    flex: 1;
-    max-width: 80%;
+.carousel {
     position: relative;
-    height: 400px;
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 33%;
+    max-width: 600px;
     overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.carousel-images {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
 }
 
-#about .photo-gallery img {
-    position: absolute;
+.carousel-item {
+    min-width: 100%;
+    display: none;
+}
+
+.carousel-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    height: auto;
 }
 
-#about .photo-gallery img.active {
-    opacity: 1;
+/* Show the current slide based on the checked radio button */
+#slide1:checked~.carousel-images .carousel-item:nth-child(1) {
+    display: block;
 }
 
-/* About Section */
-#about {
-    flex-direction: column;
-    /* Stack elements vertically */
+#slide2:checked~.carousel-images .carousel-item:nth-child(2) {
+    display: block;
 }
 
-#about .about-text,
-#about .photo-gallery {
-    max-width: 100%;
-    /* Full width */
-    text-align: center;
+#slide3:checked~.carousel-images .carousel-item:nth-child(3) {
+    display: block;
 }
 
+/* Navigation arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+    display: none;
+}
 
 
 
@@ -246,5 +278,4 @@ h2 {
     .next {
         right: 10px;
     }
-}
 }
