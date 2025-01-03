@@ -12,6 +12,7 @@ body{
 .container .content{
     position: relative;
     margin-left: 15px;
+    left: 15px;
     background-color: #e7e4d1;
 
 }
