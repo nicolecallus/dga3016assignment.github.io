@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Exhibition Showcase</title>
 
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+
     <style>
         body{
             background-color: black;
@@ -29,35 +31,36 @@
 
 
     <div class="main-scroll-div">
-        <div></div>
+        <div>
+            <button class="icon" onclick="scrollleft()"> <i class="fas fa-angle-double-left"></i></button>
+        </div>
         <div class="cover">
             <div class="scroll-images">
-                <div>
-                    <images></images>
-                </div>
-                <div>
-                    <images></images>
-                </div>
-                <div>
-                    <images></images>
-                </div>
-                <div>
-                    <images></images>
-                </div>
-                <div>
-                    <images></images>
-                </div>
-                <div>
-                    <images></images>
-                </div>
-
-
+                <div class="child"><img class="child-img" src="claudiaagius_exhibitionshowcase.png" alt="image"></div>
+                <div class="child"><img class="child-img"src="elisacarabott_exhibitionshowcase.png" alt="image"></div>
+                <div class="child"><img class="child-img" src="stefanmizzi_exhibitionshowcase.png" alt="image"></div>
+                <div class="child"><img class="child-img" src="claudiaagius_exhibitionshowcase.png" alt="image"></div>
+                <div class="child"><img class="child-img" src="elisacarabott_exhibitionshowcase.png" alt="image"></div>
+                <div class="child"><img class="child-img" src="stefanmizzi_exhibitionshowcase.png" alt="image"></div>
             </div>
         </div>
-        <div></div>
+        <div>
+            <button class="icon" onclick="scrollright()"> <i class="fas fa-angle-double-right"></i></button>
+        </div>
     </div>
 
 
 
 </body>
+
+<script>
+    function scrollleft(){
+        var left=document.querySelector(".scroll-images");
+        left.scrollBy(-500,0)
+    }
+    function scrollright(){
+        var left=document.querySelector(".scroll-images");
+        left.scrollBy(500,0)
+    }
+</script>
 </html>

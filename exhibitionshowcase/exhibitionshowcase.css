@@ -13,9 +13,10 @@ body{
     font-family: 'Arial', sans-serif; 
     min-height: 100vh;
     
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; */
+    /* justify-content: center; */
    
 }
 
@@ -52,9 +53,88 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px 0;
     
 }
+
+.cover{
+    position: relative;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.cover::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, black, transparent);
+}
+
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
+
+.child{
+    min-width: 300px;
+    height: auto;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid rgba(207, 201, 201, 0.3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.child-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon{
+    color: #e7e4d1;
+    background-color: black;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
 
 /* 
 .container .content{
