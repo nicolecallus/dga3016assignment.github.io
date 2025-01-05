@@ -12,11 +12,9 @@ body{
     padding: 0;
     font-family: 'Arial', sans-serif; 
     min-height: 100vh;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
    
 }
 
@@ -100,7 +98,7 @@ body{
     height: auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     overflow: auto;
     position: relative;
     scroll-behavior: smooth;
@@ -116,9 +114,7 @@ body{
     cursor: pointer;
     border: 1px solid rgba(207, 201, 201, 0.3);
     overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: block;
 }
 
 .scroll-images::-webkit-scrollbar{
@@ -129,6 +125,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .icon{
@@ -148,6 +145,7 @@ body{
     top: 0;
     left: 0;
     position: absolute;
+    inset: 0;
     background: rgba(0,0,0,0.6);
     display: flex;
     justify-content: center;
@@ -155,9 +153,8 @@ body{
     flex-direction: column;
     opacity: 0;
     transition: transform 0.6s ease;
-
-    padding: 20px;
     text-align: center;
+    z-index: 10;
 }
 
 .child:hover .text{
@@ -168,9 +165,9 @@ body{
     font-size: 45px;
     color: #e7e4d1;
     margin-bottom: 15px;
-
     transform: translateY(20px);
     transition: transform 0.6s ease;
+    width: 100%
 }
 
 .text p{
@@ -178,11 +175,20 @@ body{
     color:#fff;
     transform: translateY(20px);
     transition: transform 0.6s ease;
+    width: 100%
 }
 
 .child:hover .text h2,
     .child:hover .text p {
         transform: translateY(0);
+}
+
+.child a {
+    text-decoration: none;  /* Removes underline from links */
+    color: inherit;         /* Keeps text color as defined in parent */
+    display: block;         /* Makes link cover full area */
+    width: 100%;
+    height: 100%;
 }
 
 /* .content > *{
