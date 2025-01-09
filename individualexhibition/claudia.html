@@ -11,6 +11,17 @@
 <body>
 
     <!-- page 1 -->
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+    </div>
+
+
     <div class="container">
         <div class="circle-background"></div>
         <div class="content">
@@ -87,16 +98,46 @@
                 <div class="logo">
                     <img src="logo.png" alt="logo">
                 </div>
-                <div class="bar">
-                    <img src="bar.png" alt="bar">
-                </div>
-                <div class="photo-gallery">
-                    <img src="e1.jpg" alt="Student Photo 1" class="active">
-                    <img src="e2.avif" alt="Student Photo 2">
-                    <img src="e3.avif" alt="Student Photo 3">
-                    <img src="e4.avif" alt="Student Photo 4">
 
+
+
+                <div class="carousel">
+                    <!-- Radio buttons to control the slides -->
+                    <input type="radio" name="carousel" id="slide1" checked>
+                    <input type="radio" name="carousel" id="slide2">
+                    <input type="radio" name="carousel" id="slide3">
+
+                    <!-- The images wrapper -->
+                    <div class="carousel-images">
+                        <div class="carousel-item">
+                            <div class="image-frame">
+                                <img src="e1.jpg" alt="Image 1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-frame">
+                                <img src="e2.avif" alt="Image 2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="image-frame">
+                                <img src="e3.avif" alt="Image 3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation arrows -->
+                    <label for="slide3" class="arrow left">&#10094;</label>
+                    <label for="slide2" class="arrow left">&#10094;</label>
+                    <label for="slide1" class="arrow right">&#10095;</label>
+                    <label for="slide2" class="arrow right">&#10095;</label>
+                    <label for="slide3" class="arrow right">&#10095;</label>
                 </div>
+
+
+
+
+
             </div>
         </div>
 
