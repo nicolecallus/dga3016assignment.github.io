@@ -58,18 +58,73 @@ body {
     height: auto;
 }
 
-/* bar */
-.bar {
-    width: 60px;
-    height: auto;
-    position: absolute;
-    right: 15px;
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
-.bar img {
-    width: 100%;
-    height: auto;
+.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
 }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    list-style: none;
+}
+
+.nav-menu.active {
+    right: 20px;
+}
+
+.nav-item {
+    margin: 15px 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #e7e4d1;
+}
+
+/* Hamburger animation */
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 
 .titles {
     text-align: center;
