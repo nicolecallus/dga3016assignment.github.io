@@ -58,19 +58,6 @@ body {
     height: auto;
 }
 
-/* bar */
-.bar {
-    width: 60px;
-    height: auto;
-    position: absolute;
-    right: 15px;
-}
-
-.bar img {
-    width: 100%;
-    height: auto;
-}
-
 .titles {
     text-align: center;
     flex-grow: 1;
@@ -107,6 +94,92 @@ h2 {
     object-fit: cover;
     transform: translateY(50px);
 }
+
+
+/*social icons*/
+.social-icons {
+    position: fixed;
+    top: 150px;
+    left: 790px;
+    z-index: 1000;
+    display: flex;
+    gap: 5px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 7x0px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #e7e4d1;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    list-style: none;
+}
+
+.nav-menu.active {
+    right: 20px;
+}
+
+.nav-item {
+    margin: 15px 0;
+}
+
+.nav-link {
+    color: #e7e4d1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #e7e4d1;
+}
+
+/* Hamburger animation */
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 
 
 /* dimensions of page 2 */
@@ -169,7 +242,7 @@ h2 {
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px;
-    background-color: white;
+    background-color: #e7e4d1;
 }
 
 .carousel-images {
@@ -182,9 +255,22 @@ h2 {
     display: none;
 }
 
+/* New image frame styling */
+.image-frame {
+    width: 100%;
+    height: 700px;
+    /* Fixed height for all images */
+    position: relative;
+    overflow: hidden;
+}
+
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    /* This maintains aspect ratio while filling the frame */
+    object-position: center;
+    /* Centers the image */
 }
 
 /* Show the current slide based on the checked radio button */
@@ -206,7 +292,7 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #e7e4d1;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -234,13 +320,21 @@ input[type="radio"] {
 
 
 
-
-
 /* for mobile */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Navbar Adjustments */
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 3px;
     }
 
     .logo {
@@ -255,13 +349,14 @@ input[type="radio"] {
         font-size: 1.2rem;
     }
 
-    .carousel-container {
-        max-width: 100%;
-        border-radius: 0;
+    .carousel {
+        margin-left: 5%;
+        width: 90%;
     }
 
-    .carousel {
+    .image-frame {
         height: 300px;
+        /* Smaller height for mobile */
     }
 
     .nav-button {

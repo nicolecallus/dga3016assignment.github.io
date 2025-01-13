@@ -11,6 +11,16 @@
 <body>
 
     <!-- page 1 -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+    </div>
+
+
     <div class="container">
         <div class="circle-background"></div>
         <div class="content">
@@ -18,9 +28,7 @@
                 <div class="logo">
                     <img src="logo.png" alt="logo">
                 </div>
-                <div class="bar">
-                    <img src="bar.png" alt="bar">
-                </div>
+
                 <div class="titles">
                     <h1>Elisa Carabott</h1>
                     <h2>Out of the ordinary</h2>
@@ -29,6 +37,39 @@
             <div class="elisa">
                 <img src="elisacrabott.png" alt="Elisa Carabott">
             </div>
+
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#Exhibition Showcase" class="nav-link">Exhibition Showcase</a></li>
+                    <li class="nav-item"><a href="#Individual Exhibition" class="nav-link">Individual Exhibition</a>
+                    </li>
+                    <li class="nav-item"><a href="#Sponsors" class="nav-link">Sponsors</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Add this script at the end of body -->
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                });
+
+                document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }));
+            </script>
         </div>
     </div>
 
@@ -40,9 +81,7 @@
                 <div class="logo">
                     <img src="logoblack.png" alt="logo">
                 </div>
-                <div class="bar">
-                    <img src="barblack.png" alt="bar">
-                </div>
+
 
                 <div class="text-content">
                     <h1 class="centered-title">Out of the ordinary</h1>
@@ -70,9 +109,7 @@
                 <div class="logo">
                     <img src="logo.png" alt="logo">
                 </div>
-                <div class="bar">
-                    <img src="bar.png" alt="bar">
-                </div>
+
 
 
                 <div class="carousel">
@@ -81,22 +118,29 @@
                     <input type="radio" name="carousel" id="slide2">
                     <input type="radio" name="carousel" id="slide3">
 
-                    <!-- The images -->
+                    <!-- The images wrapper -->
                     <div class="carousel-images">
                         <div class="carousel-item">
-                            <img src="e1.jpg" alt="Image 1">
+                            <div class="image-frame">
+                                <img src="e1.jpg" alt="Image 1">
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="e2.avif" alt="Image 2">
+                            <div class="image-frame">
+                                <img src="e2.avif" alt="Image 2">
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="e3.avif" alt="Image 3">
+                            <div class="image-frame">
+                                <img src="e3.avif" alt="Image 2">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Navigation arrows -->
                     <label for="slide3" class="arrow left">&#10094;</label>
                     <label for="slide2" class="arrow left">&#10094;</label>
+                    <label for="slide1" class="arrow left">&#10094;</label>
                     <label for="slide1" class="arrow right">&#10095;</label>
                     <label for="slide2" class="arrow right">&#10095;</label>
                     <label for="slide3" class="arrow right">&#10095;</label>
