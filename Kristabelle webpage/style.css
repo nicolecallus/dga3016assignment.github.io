@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #816565;
+    background-color: #723c80;
     padding: 0.5em 1em;
 }
 
@@ -54,7 +54,8 @@ body {
 }
 
 .navbar .nav-links a:hover {
-    background-color: #555;
+    background-color: #10092c;
+    ;
     border-radius: 5px;
 }
 
@@ -94,7 +95,7 @@ h1 .header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    font-size: 120px;
+    font-size: 150px;
     letter-spacing: -0.05em;
     line-height: 1;
     margin: 0 auto;
