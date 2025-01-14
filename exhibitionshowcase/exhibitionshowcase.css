@@ -3,19 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 
-    
+
 }
 
-body{
+body {
     background-color: black;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 .container {
@@ -24,7 +24,7 @@ body{
     margin: 0 !important;
     height: 100%;
 }
-        
+
 .content {
     position: relative;
     background-color: #e7e4d1;
@@ -43,10 +43,10 @@ body{
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-.main-scroll-div{
+.main-scroll-div {
     width: 90%;
     height: 100%;
     display: flex;
@@ -55,10 +55,10 @@ body{
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    
+
 }
 
-.cover{
+.cover {
     position: relative;
     width: 90%;
     height: 50%;
@@ -67,7 +67,7 @@ body{
     overflow: hidden;
 }
 
-.cover::before{
+.cover::before {
     position: absolute;
     content: "";
     left: 0;
@@ -80,7 +80,7 @@ body{
     pointer-events: none;
 }
 
-.cover::after{
+.cover::after {
     position: absolute;
     content: "";
     right: 0;
@@ -93,7 +93,7 @@ body{
     pointer-events: none;
 }
 
-.scroll-images{
+.scroll-images {
     width: 100%;
     height: auto;
     display: flex;
@@ -106,7 +106,7 @@ body{
     padding: 20px;
 }
 
-.child{
+.child {
     min-width: 300px;
     height: auto;
     margin: 1px 10px;
@@ -117,18 +117,18 @@ body{
     display: block;
 }
 
-.scroll-images::-webkit-scrollbar{
+.scroll-images::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
-.child-img{
+.child-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.icon{
+.icon {
     color: #e7e4d1;
     background-color: black;
     font-size: 50px;
@@ -140,13 +140,13 @@ body{
     position: relative;
 }
 
-.text{
+.text {
     height: 100%;
     top: 0;
     left: 0;
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,11 +157,11 @@ body{
     z-index: 10;
 }
 
-.child:hover .text{
+.child:hover .text {
     opacity: 1;
 }
 
-.text h2{
+.text h2 {
     font-size: 45px;
     color: #e7e4d1;
     margin-bottom: 15px;
@@ -170,67 +170,24 @@ body{
     width: 100%
 }
 
-.text p{
+.text p {
     font-size: 19px;
-    color:#fff;
+    color: #fff;
     transform: translateY(20px);
     transition: transform 0.6s ease;
     width: 100%
 }
 
 .child:hover .text h2,
-    .child:hover .text p {
-        transform: translateY(0);
+.child:hover .text p {
+    transform: translateY(0);
 }
 
 .child a {
-    text-decoration: none;  
-    color: inherit;         
-    display: block;         
+    text-decoration: none;
+    color: inherit;
+    display: block;
     width: 100%;
     height: 100%;
 }
-
-/* .content > *{
-    transform:translateY(25px);
-    transition: transform 0.6s;
-}
-
-.content:hover> *{
-    transform:translateY(0px);
-
-} */
-
-
-/* .wrapper{
-    width: 100%;
-    height: 100vh;
-} */
-
-
-
-/* 
-.container .content{
-    position: relative;
-    margin-left: 15px;
-    background-color: #e7e4d1;
-
-}
-
-
-
-
-#heading .content h1{
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 5px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    text-align: center;
-
-
- 
-  
-} */
 
