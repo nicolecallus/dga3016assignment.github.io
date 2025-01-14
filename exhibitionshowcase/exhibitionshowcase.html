@@ -27,12 +27,12 @@
 
     </div> 
 
-
+<!-- 
     <div class="main-scroll-div">
         <button class="icon" onclick="scrollLeft()">
             <i class="fa-solid fa-angle-left"></i>
         </button>
-    </div>
+    </div> -->
         
         <div class="cover">
             <div class="scroll-images">
@@ -96,7 +96,42 @@
         
     </div>
 
-    <div>
+    <div class="nav">
+        <div class="arrow left" onclick="scrollLeft()"></div>
+        <div class="arrow right" onclick="scrollRight()"></div>
+    </div>
+
+
+    <script>
+        function scrollleft(){
+            const scrollContainer=document.querySelector(".scroll-images");
+            scrollContainer.scrollBy({left: -500, behavior: 'smooth'});
+            // left.scrollBy(-500,0)
+        }
+        function scrollright(){
+            const scrollContainer=document.querySelector(".scroll-images");
+            scrollContainer.scrollBy({left: 500, behavior: 'smooth'});
+        }
+    </script> 
+    
+    <!-- <div class="slider">
+        <div class="arrow left" onclick="prevSlide()">←</div>
+        <div class="arrow right" onclick="nextSlide()">→</div>
+    </div> -->
+<!--     
+    <script>
+        function prevSlide() {
+            console.log('Move to previous slide');
+        }
+    
+        function scrollRight() {
+            console.log('Move to next slide');
+        }
+    </script> -->
+
+    
+
+    <!-- <div>
         <button class="icon" onclick="scrollRight()">
             <i class="fa-solid fa-angle-right"></i>
         </button>
@@ -118,7 +153,7 @@
                 behavior: 'smooth'
             });
         }
-    </script>
+    </script> -->
     <!-- <div class="carousel">
         
 
