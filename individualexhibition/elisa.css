@@ -113,6 +113,13 @@ h2 {
     cursor: pointer;
 }
 
+/* Hide social icons when not on page 1 */
+#page2 .social-icons,
+#page3 .social-icons {
+    display: none;
+}
+
+
 /* navbar */
 .navbar {
     position: fixed;

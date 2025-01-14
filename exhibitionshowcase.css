@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+}
+        
+.content {
+    position: relative;
+    background-color: #e7e4d1;
+    width: 100%;
+    padding: 0 15px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading .content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+
+.main-scroll-div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px 0;
+    position: relative;
+    
+}
+
+.cover{
+    position: relative;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, black, transparent);
+    pointer-events: none;
+}
+
+.cover::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, black, transparent);
+    pointer-events: none;
+}
+
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+}
+
+.child{
+    min-width: 300px;
+    height: auto;
+    margin: 1px 10px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgba(207, 201, 201, 0.3);
+    overflow: hidden;
+    /* display: block; */
+}
+
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.child-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.icon{
+    color: #e7e4d1;
+    background-color: black;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+.text{
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: transform 0.6s ease;
+    text-align: center;
+    z-index: 10;
+}
+
+.child:hover .text{
+    opacity: 1;
+}
+
+.text h2{
+    font-size: 45px;
+    color: #e7e4d1;
+    margin-bottom: 15px;
+    transform: translateY(20px);
+    transition: transform 0.6s ease;
+    width: 100%
+}
+
+.text p{
+    font-size: 19px;
+    color:#fff;
+    transform: translateY(20px);
+    transition: transform 0.6s ease;
+    width: 100%
+}
+
+.child:hover .text h2,
+    .child:hover .text p {
+        transform: translateY(0);
+}
+
+.child a {
+    text-decoration: none;  
+    color: inherit;         
+    display: block;         
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e7e4d1;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .content > *{
+    transform:translateY(25px);
+    transition: transform 0.6s;
+}
+
+.content:hover> *{
+    transform:translateY(0px);
+
+} */
+
+
+/* .wrapper{
+    width: 100%;
+    height: 100vh;
+} */
+
+
+
+/* 
+.container .content{
+    position: relative;
+    margin-left: 15px;
+    background-color: #e7e4d1;
+
+}
+
+
+
+
+#heading .content h1{
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+ 
+  
+} */
+
