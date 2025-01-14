@@ -114,7 +114,7 @@ body{
     cursor: pointer;
     border: 1px solid rgba(207, 201, 201, 0.3);
     overflow: hidden;
-    /* display: block; */
+    display: block;
 }
 
 .scroll-images::-webkit-scrollbar{
@@ -189,32 +189,6 @@ body{
     display: block;         
     width: 100%;
     height: 100%;
-}
-
-/* Navigation arrows */
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #e7e4d1;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.arrow.left {
-    left: 10px;
-}
-
-.arrow.right {
-    right: 10px;
-}
-
-.arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* .content > *{
