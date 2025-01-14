@@ -126,7 +126,7 @@ h2 {
 
 /* navbar */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 1000;
@@ -252,8 +252,8 @@ h2 {
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    top: 330px;
-    left: -30px;
+    top: 670px;
+    left: -170px;
 }
 
 
@@ -266,9 +266,9 @@ h2 {
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    top: 330px;
-    right: -0px;
-    transform: translateX(-50%);
+    top: 550px;
+    left: 170px;
+
 }
 
 
@@ -314,7 +314,7 @@ h2 {
     justify-content: flex-start;
     align-items: stretch;
     overflow: auto;
-    position: relative;
+    position: absolute;
     scroll-behavior: smooth;
     gap: 20px;
     padding: 20px;
@@ -329,8 +329,7 @@ h2 {
     border: 1px solid rgba(207, 201, 201, 0.3);
     overflow: hidden;
     display: block;
-    top: 160px;
-    left: -80px;
+    left: 600px;
 }
 
 .scroll-images::-webkit-scrollbar {
@@ -342,6 +341,7 @@ h2 {
     height: 500px;
     object-fit: cover;
     display: block;
+
 }
 
 .icon {

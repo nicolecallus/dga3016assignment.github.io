@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="claudia.css">
+    <script defer src="claudia.js"></script>
     <title>Claudia Agius - Out of the ordinary</title>
 </head>
 
@@ -30,21 +31,24 @@
                     <img src="logo.png" alt="logo">
                 </div>
 
-                <!-- navbar -->
-
+                <!-- Navbar from Spectra.html -->
                 <nav class="navbar">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="exhibitionshowcase.html">Exhibition
+                                    showcase</a></li>
+                            <li class="nav-item"><a class="nav-link" href="individualexhibtion.html">Individual
+                                    Exhibition</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav-menu">
-                        <li class="nav-item"><a href="about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="exhibition showcase" class="nav-link">Exhibition Showcase</a></li>
-                        <li class="nav-item"><a href="individual work" class="nav-link">Individual work</a></li>
-                        <li class="nav-item"><a href="sponsors" class="nav-link">Sponsors</a></li>
-                        <li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
-                    </ul>
                 </nav>
 
 
@@ -92,57 +96,60 @@
 
 
     <!-- page 3 -->
-    <div class="container3">
-        <div class="content">
-            <div class="header">
-                <div class="logo">
-                    <img src="logo.png" alt="logo">
+    <section id="page3" class="page">
+        <div class="container3">
+            <div class="content">
+                <div class="header">
+                    <div class="logo">
+                        <img src="logo.png" alt="logo">
+                    </div>
                 </div>
 
 
-
-                <div class="carousel">
-                    <!-- Radio buttons to control the slides -->
-                    <input type="radio" name="carousel" id="slide1" checked>
-                    <input type="radio" name="carousel" id="slide2">
-                    <input type="radio" name="carousel" id="slide3">
-
-                    <!-- The images wrapper -->
-                    <div class="carousel-images">
-                        <div class="carousel-item">
-                            <div class="image-frame">
-                                <img src="c1.webp" alt="Image 1">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="image-frame">
-                                <img src="c2.webp" alt="Image 2">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="image-frame">
-                                <img src="c2.webp" alt="Image 3">
-                            </div>
+                <div class="main-scroll-div">
+                    <button class="icon left" id="left-arrow">&#10094;</button>
+                </div>
+                <div class="scroll-images">
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c1.webp" alt="Elisa Carabott Exhibition">
                         </div>
                     </div>
-
-                    <!-- Navigation arrows -->
-                    <label for="slide3" class="arrow left">&#10094;</label>
-                    <label for="slide2" class="arrow left">&#10094;</label>
-                    <label for="slide1" class="arrow left">&#10094;</label>
-                    <label for="slide1" class="arrow right">&#10095;</label>
-                    <label for="slide2" class="arrow right">&#10095;</label>
-                    <label for="slide3" class="arrow right">&#10095;</label>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c2.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c3.webp" alt="Stefan Mizzi Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c4.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c5.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c6.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
                 </div>
-
-
-
-
+                <div class="main-scroll-div-right">
+                    <button class="icon right" id="right-arrow">&#10095;</button>
+                </div>
 
             </div>
         </div>
 
-    </div>
+
+    </section>
 
 </body>
 
