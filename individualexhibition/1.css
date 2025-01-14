@@ -58,47 +58,10 @@ body {
     height: auto;
 }
 
-.titles {
-    text-align: center;
-    flex-grow: 1;
-    padding: 0 20px;
-}
-
-/* Elisa Carabott - title */
-h1 {
-    font-size: 3.2rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-/* out of the ordinary - title */
-h2 {
-    font-size: 2.0rem;
-    font-weight: normal;
-    color: #333;
-}
-
-/* elisa - image */
-.elisa {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.elisa img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
-    transform: translateY(50px);
-}
-
 
 /*social icons*/
 .social-icons {
-    position: absolute;
+    position: fixed;
     top: 150px;
     left: 790px;
     z-index: 1000;
@@ -108,20 +71,9 @@ h2 {
 
 .social-icons img {
     width: 70px;
-    height: 70px;
+    height: 7x0px;
     filter: invert(100%);
     cursor: pointer;
-}
-
-#page1 .social-icons {
-    display: flex;
-    /* Ensure it's visible on page 1 */
-}
-
-#page2 .social-icons,
-#page3 .social-icons {
-    display: none;
-    /* Hide on all other pages */
 }
 
 /* navbar */
@@ -143,7 +95,7 @@ h2 {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #e7e4d1;
+    background-color: #fff;
     transition: all 0.3s ease;
 }
 
@@ -152,7 +104,7 @@ h2 {
     right: -100%;
     top: 70px;
     background-color: rgba(0, 0, 0, 0.9);
-    width: 300px;
+    width: 220px;
     padding: 20px;
     border-radius: 10px;
     transition: 0.3s;
@@ -168,7 +120,7 @@ h2 {
 }
 
 .nav-link {
-    color: #e7e4d1;
+    color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     transition: 0.3s;
@@ -191,6 +143,43 @@ h2 {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+.titles {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+/* Claudia Agius - title */
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* out of the ordinary - title */
+h2 {
+    font-size: 2.0rem;
+    font-weight: normal;
+    color: #333;
+}
+
+/* claudia - image */
+.claudia {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.claudia img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    transform: translateY(50px);
+    margin-top: 6%;
+}
 
 
 /* dimensions of page 2 */
@@ -243,6 +232,8 @@ h2 {
 }
 
 
+/* photo gallery */
+
 .main-scroll-div {
     width: 90%;
     height: 100%;
@@ -252,25 +243,8 @@ h2 {
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    top: 330px;
-    left: -30px;
+
 }
-
-
-.main-scroll-div-right {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 20px 0;
-    position: relative;
-    top: 330px;
-    right: -0px;
-    transform: translateX(-50%);
-}
-
 
 .cover {
     position: relative;
@@ -308,7 +282,7 @@ h2 {
 }
 
 .scroll-images {
-    width: 100%;
+    width: 50px;
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -321,16 +295,14 @@ h2 {
 }
 
 .child {
-    min-width: 350px;
-    height: 500px;
+    min-width: 50px;
+    height: auto;
     margin: 1px 10px;
     position: relative;
     cursor: pointer;
     border: 1px solid rgba(207, 201, 201, 0.3);
     overflow: hidden;
     display: block;
-    top: 160px;
-    left: -80px;
 }
 
 .scroll-images::-webkit-scrollbar {
@@ -338,128 +310,13 @@ h2 {
 }
 
 .child-img {
-    width: 380px;
-    height: 500px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     display: block;
 }
 
-.icon {
-    color: #e7e4d1;
-    background-color: black;
-    font-size: 50px;
-    outline: none;
-    border: none;
-    padding: 0px 20px;
-    cursor: pointer;
-    z-index: 100;
-    position: relative;
-}
 
-
-
-
-.image-frame {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* photo gallery */
-/*.carousel {
-    position: relative;
-    margin-left: 35%;
-    margin-top: 5%;
-    width: 33%;
-    max-width: 600px;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #e7e4d1;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    display: none;
-}
-
-
-.image-frame {
-    width: 100%;
-    height: 700px;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    object-position: center;
-
-}
-
-
-#slide1:checked~.carousel-images .carousel-item:nth-child(1) {
-    display: block;
-}
-
-#slide2:checked~.carousel-images .carousel-item:nth-child(2) {
-    display: block;
-}
-
-#slide3:checked~.carousel-images .carousel-item:nth-child(3) {
-    display: block;
-}
-
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #e7e4d1;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.arrow.left {
-    left: 10px;
-}
-
-.arrow.right {
-    right: 10px;
-}
-
-.arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-input[type="radio"] {
-    display: none;
-}*/
 
 
 
@@ -469,16 +326,6 @@ input[type="radio"] {
     .header {
         flex-direction: column;
         align-items: center;
-    }
-
-    /* Navbar Adjustments */
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar-toggler-icon {
-        width: 25px;
-        height: 3px;
     }
 
     .logo {
@@ -501,20 +348,5 @@ input[type="radio"] {
     .image-frame {
         height: 300px;
         /* Smaller height for mobile */
-    }
-
-    .nav-button {
-        padding: 12px;
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    .prev {
-        left: 10px;
-    }
-
-    .next {
-        right: 10px;
     }
 }
