@@ -117,13 +117,15 @@
             width: 80px;
             height: auto;
             position: absolute;
-            left: 15px;
+            margin-top: -17.5%;
         }
 
         .logo img {
             width: 100%;
             height: auto;
+
         }
+
 
 
 
@@ -222,9 +224,18 @@
             transition: opacity 1s ease-in-out;
         }
 
+        .navbar-brand {
+            position: absolute;
+            margin-left: -1600px;
+            top: 10%;
+        }
+
         .rectangle img.active {
             opacity: 1;
         }
+
+
+
 
         .artists-text {
             flex: 1;
@@ -313,12 +324,16 @@
 
 <body>
 
+    <!-- <div class="container">
+        <nav class="navar-expand-md navbar-dark sticky-top"></nav>
+        <a href="#" class="navbar-brand">
+            <img src="logo.png" alt="logo" width="30" height="24" class="d-inline-block align-top" />
+            spectra </a>
+    </div> -->
 
 
-    <div class="logo">
-        <img src="logo.png" alt="logo">
-    </div>
-
+    <a href="#" class="navbar-brand">
+        <img src="logo.png" alt="logo" width="80px" height="auto" class="d-inline-block align-top" /> </a>
 
     <nav class="navbar">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -341,6 +356,9 @@
 
     <div class="fullscreen">
         <h1>Spectra</h1>
+        <a href="#" class="navbar-brand top-0">
+            <img src="logo.png" alt="logo" width="80px" height="auto" class="d-inline-block align-top" /> </a>
+
     </div>
 
     <!-- About Section -->
