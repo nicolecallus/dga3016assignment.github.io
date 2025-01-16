@@ -29,6 +29,7 @@ body {
 .hamburger {
     display: block;
     cursor: pointer;
+    
     padding: 10px;
 }
 
