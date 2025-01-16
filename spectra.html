@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spectra - Degree Exhibition</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -14,7 +15,7 @@
             overflow-x: hidden;
         }
 
-        
+
         .fullscreen {
             position: relative;
             width: 100%;
@@ -27,7 +28,7 @@
             color: white;
         }
 
-        
+
         .fullscreen h1 {
             font-size: 11rem;
             letter-spacing: 13px;
@@ -42,13 +43,18 @@
             animation: shimmer 3s infinite linear;
         }
 
-        
+
         @keyframes shimmer {
-            0% { background-position: -100% 0; }
-            100% { background-position: 100% 0; }
+            0% {
+                background-position: -100% 0;
+            }
+
+            100% {
+                background-position: 100% 0;
+            }
         }
 
-        
+
         .navbar {
             position: fixed;
             top: 0;
@@ -103,34 +109,47 @@
         }
 
         .nav-link:hover {
-            color: #e7e4d1; 
+            color: #e7e4d1;
         }
 
-        
+        /* logo */
+        .logo {
+            width: 80px;
+            height: auto;
+            position: absolute;
+            left: 15px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+
         .social-icons {
             position: fixed;
             top: 10px;
             left: 10px;
             z-index: 1000;
             display: flex;
-            gap: 15px; 
+            gap: 15px;
         }
 
         .social-icons img {
             width: 50px;
             height: 50px;
-            filter: invert(100%); 
+            filter: invert(100%);
             cursor: pointer;
         }
 
-        
+
         #about {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
             padding: 50px 10%;
-            background-color: #e7e4d1; 
+            background-color: #e7e4d1;
             min-height: 100vh;
         }
 
@@ -179,13 +198,13 @@
             opacity: 1;
         }
 
-        
+
         #artists {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 50px 10%;
-            background-color: #000; 
+            background-color: #000;
             height: 100vh;
         }
 
@@ -228,8 +247,8 @@
             max-width: 40%;
             text-transform: uppercase;
             font-size: 1.5rem;
-            color: #e7e4d1; 
-            margin-left: 30px; 
+            color: #e7e4d1;
+            margin-left: 30px;
         }
 
         .artists-text h2 {
@@ -246,6 +265,7 @@
 
         /* Responsive Media Query for Small Devices */
         @media (max-width: 768px) {
+
             /* Fullscreen Section */
             .fullscreen h1 {
                 font-size: 4rem;
@@ -264,43 +284,52 @@
 
             /* About Section */
             #about {
-                flex-direction: column; /* Stack elements vertically */
+                flex-direction: column;
+                /* Stack elements vertically */
             }
 
-            #about .about-text, 
+            #about .about-text,
             #about .photo-gallery {
-                max-width: 100%; /* Full width */
+                max-width: 100%;
+                /* Full width */
                 text-align: center;
             }
 
             /* Artists Section */
             #artists {
-                flex-direction: column; /* Stack columns and text */
+                flex-direction: column;
+                /* Stack columns and text */
             }
 
             .artists-gallery {
-                flex-wrap: wrap; /* Wrap columns to the next line */
+                flex-wrap: wrap;
+                /* Wrap columns to the next line */
             }
 
             .column {
-                max-width: 100%; /* Full width for each column */
-                flex-direction: row; /* Horizontal alignment for rectangles */
+                max-width: 100%;
+                /* Full width for each column */
+                flex-direction: row;
+                /* Horizontal alignment for rectangles */
             }
 
             .rectangle {
-                height: 100px; /* Smaller rectangles */
+                height: 100px;
+                /* Smaller rectangles */
             }
 
             .artists-text {
-                margin-left: 0; /* Remove extra spacing */
+                margin-left: 0;
+                /* Remove extra spacing */
                 text-align: center;
             }
         }
     </style>
 </head>
+
 <body>
 
-    
+
     <div class="social-icons">
         <a href="https://www.instagram.com" target="_blank">
             <img src="instagram.png" alt="Instagram">
@@ -310,9 +339,14 @@
         </a>
     </div>
 
-    
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+
+
     <nav class="navbar">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -321,13 +355,13 @@
                 <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
                 <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
                 <li class="nav-item"><a class="nav-link" href="exhibitionshowcase.html">Exhibition showcase</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
 
-    
+
+
     <div class="fullscreen">
         <h1>Spectra</h1>
     </div>
@@ -337,9 +371,9 @@
         <div class="about-text">
             <h2>ABOUT</h2>
             <p>
-                Spectra is an annual student exhibition showcasing the creative works 
-                of final-year students from the University of Malta. This exhibition 
-                celebrates the intersection of art, technology, and innovation, highlighting 
+                Spectra is an annual student exhibition showcasing the creative works
+                of final-year students from the University of Malta. This exhibition
+                celebrates the intersection of art, technology, and innovation, highlighting
                 the diverse talents of future artists and designers.
             </p>
         </div>
@@ -357,24 +391,32 @@
         <div class="artists-gallery">
             <!-- First Column -->
             <div class="column">
-                <div class="rectangle"><img src="img2.jpg" alt="Image 1" class="active"><img src="img3.jpg" alt="Image 2"></div>
-                <div class="rectangle"><img src="img4.jpg" alt="Image 3" class="active"><img src="img5.jpg" alt="Image 4"></div>
-                <div class="rectangle"><img src="img6.jpg" alt="Image 5" class="active"><img src="img7.jpg" alt="Image 6"></div>
-                <div class="rectangle"><img src="img8.jpg" alt="Image 7" class="active"><img src="img9.jpg" alt="Image 8"></div>
+                <div class="rectangle"><img src="img2.jpg" alt="Image 1" class="active"><img src="img3.jpg"
+                        alt="Image 2"></div>
+                <div class="rectangle"><img src="img4.jpg" alt="Image 3" class="active"><img src="img5.jpg"
+                        alt="Image 4"></div>
+                <div class="rectangle"><img src="img6.jpg" alt="Image 5" class="active"><img src="img7.jpg"
+                        alt="Image 6"></div>
+                <div class="rectangle"><img src="img8.jpg" alt="Image 7" class="active"><img src="img9.jpg"
+                        alt="Image 8"></div>
             </div>
             <!-- Second Column -->
             <div class="column">
-                <div class="rectangle"><img src="img10.jpg" alt="Image 9" class="active"><img src="img11.jpg" alt="Image 10"></div>
-                <div class="rectangle"><img src="img2.jpg" alt="Image 11" class="active"><img src="img3.jpg" alt="Image 12"></div>
-                <div class="rectangle"><img src="img4.jpg" alt="Image 13" class="active"><img src="img5.jpg" alt="Image 14"></div>
-                <div class="rectangle"><img src="img6.jpg" alt="Image 15" class="active"><img src="img7.jpg" alt="Image 16"></div>
+                <div class="rectangle"><img src="img10.jpg" alt="Image 9" class="active"><img src="img11.jpg"
+                        alt="Image 10"></div>
+                <div class="rectangle"><img src="img2.jpg" alt="Image 11" class="active"><img src="img3.jpg"
+                        alt="Image 12"></div>
+                <div class="rectangle"><img src="img4.jpg" alt="Image 13" class="active"><img src="img5.jpg"
+                        alt="Image 14"></div>
+                <div class="rectangle"><img src="img6.jpg" alt="Image 15" class="active"><img src="img7.jpg"
+                        alt="Image 16"></div>
             </div>
         </div>
         <div class="artists-text">
             <h2>Artists</h2>
             <p>
-                Meet the brilliant artists participating in Spectra. Each one brings a unique vision to the exhibition, 
-                showcasing creativity, passion, and innovation. These talented individuals represent the future of art 
+                Meet the brilliant artists participating in Spectra. Each one brings a unique vision to the exhibition,
+                showcasing creativity, passion, and innovation. These talented individuals represent the future of art
                 and technology, pushing the boundaries of what’s possible.
             </p>
         </div>
@@ -410,4 +452,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
