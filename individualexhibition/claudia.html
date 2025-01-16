@@ -10,6 +10,64 @@
 
 
 </head>
+<style>
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+        bottom: -8px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 1rem;
+        text-align: left;
+        padding: 5px 10px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: #e7e4d1;
+    }
+</style>
 
 <body>
 
@@ -25,7 +83,6 @@
     </div>
 
 
-
     <div class="container">
         <div class="circle-background"></div>
         <div class="content">
@@ -36,7 +93,7 @@
 
                 <!-- Navbar from Spectra.html -->
 
-                <nav class="navbar position-fixed top-0 end-0">
+                <nav class="navbar">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -45,10 +102,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
-                            <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
-                            <li class="nav-item"><a class="nav-link" href="exhibitionshowcase.html">Exhibition
-                                    showcase</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#positions">Positions</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -152,11 +206,8 @@
 
 
     </section>
-
-    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
