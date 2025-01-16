@@ -98,7 +98,7 @@ h2 {
 
 /*social icons*/
 .social-icons {
-    position: fixed;
+    position: absolute;
     top: 150px;
     left: 790px;
     z-index: 1000;
@@ -108,7 +108,7 @@ h2 {
 
 .social-icons img {
     width: 70px;
-    height: 7x0px;
+    height: 70px;
     filter: invert(100%);
     cursor: pointer;
 }
@@ -126,7 +126,7 @@ h2 {
 
 /* navbar */
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 1000;
@@ -243,8 +243,141 @@ h2 {
 }
 
 
+.main-scroll-div {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px 0;
+    position: relative;
+    top: 670px;
+    left: -170px;
+}
+
+
+.main-scroll-div-right {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px 0;
+    position: relative;
+    top: 550px;
+    left: 170px;
+
+}
+
+
+.cover {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, black, transparent);
+    pointer-events: none;
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, black, transparent);
+    pointer-events: none;
+}
+
+.scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: auto;
+    position: absolute;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+}
+
+.child {
+    min-width: 350px;
+    height: 500px;
+    margin: 1px 10px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgba(207, 201, 201, 0.3);
+    overflow: hidden;
+    display: block;
+    left: 600px;
+}
+
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.child-img {
+    width: 380px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.icon {
+    color: #e7e4d1;
+    background-color: black;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+
+
+
+.image-frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* photo gallery */
-.carousel {
+/*.carousel {
     position: relative;
     margin-left: 35%;
     margin-top: 5%;
@@ -266,11 +399,11 @@ h2 {
     display: none;
 }
 
-/* New image frame styling */
+
 .image-frame {
     width: 100%;
     height: 700px;
-    /* Fixed height for all images */
+
     position: relative;
     overflow: hidden;
 }
@@ -279,12 +412,12 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* This maintains aspect ratio while filling the frame */
+
     object-position: center;
-    /* Centers the image */
+
 }
 
-/* Show the current slide based on the checked radio button */
+
 #slide1:checked~.carousel-images .carousel-item:nth-child(1) {
     display: block;
 }
@@ -297,7 +430,7 @@ h2 {
     display: block;
 }
 
-/* Navigation arrows */
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -323,10 +456,10 @@ h2 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Hide the radio buttons */
+
 input[type="radio"] {
     display: none;
-}
+}*/
 
 
 

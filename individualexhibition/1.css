@@ -58,9 +58,10 @@ body {
     height: auto;
 }
 
+
 /*social icons*/
 .social-icons {
-    position: absolute;
+    position: fixed;
     top: 150px;
     left: 790px;
     z-index: 1000;
@@ -142,14 +143,13 @@ body {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-
 .titles {
     text-align: center;
     flex-grow: 1;
     padding: 0 20px;
 }
 
-/* Stefan Mizzi - title */
+/* Claudia Agius - title */
 h1 {
     font-size: 3.2rem;
     margin-bottom: 0.5rem;
@@ -163,21 +163,22 @@ h2 {
     color: #333;
 }
 
-/* stefan - image */
-.stefan {
+/* claudia - image */
+.claudia {
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
 
-.stefan img {
+.claudia img {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     object-fit: cover;
     transform: translateY(50px);
+    margin-top: 6%;
 }
 
 
@@ -232,6 +233,7 @@ h2 {
 
 
 /* photo gallery */
+
 .main-scroll-div {
     width: 90%;
     height: 100%;
@@ -241,25 +243,8 @@ h2 {
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    top: 670px;
-    left: -170px;
-}
-
-
-.main-scroll-div-right {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 20px 0;
-    position: relative;
-    top: 550px;
-    left: 170px;
 
 }
-
 
 .cover {
     position: relative;
@@ -297,28 +282,27 @@ h2 {
 }
 
 .scroll-images {
-    width: 100%;
+    width: 50px;
     height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
     overflow: auto;
-    position: absolute;
+    position: relative;
     scroll-behavior: smooth;
     gap: 20px;
     padding: 20px;
 }
 
 .child {
-    min-width: 350px;
-    height: 500px;
+    min-width: 50px;
+    height: auto;
     margin: 1px 10px;
     position: relative;
     cursor: pointer;
     border: 1px solid rgba(207, 201, 201, 0.3);
     overflow: hidden;
     display: block;
-    left: 600px;
 }
 
 .scroll-images::-webkit-scrollbar {
@@ -326,35 +310,11 @@ h2 {
 }
 
 .child-img {
-    width: 380px;
-    height: 500px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     display: block;
-
 }
-
-.icon {
-    color: #e7e4d1;
-    background-color: black;
-    font-size: 50px;
-    outline: none;
-    border: none;
-    padding: 0px 20px;
-    cursor: pointer;
-    z-index: 100;
-    position: relative;
-}
-
-
-
-
-.image-frame {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
 
 
 

@@ -15,14 +15,69 @@ body {
     height: auto;
 }
 
-.bar {
-    width: 47px;
-    height: 47px;
-    margin-left: 100%;
-    margin-top: -2%;
+
+
+/* Navbar Styling */
+
+.logo-img {
+    height: 50px;
+    /* Adjust size */
+    width: auto;
+    /* Maintain aspect ratio */
 }
 
-.header {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #723c80;
+    padding: 0.5em 1em;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #10092c;
+    ;
+    border-radius: 5px;
+}
+
+/* Responsive Burger Menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3em;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+
+
+
+h1 .header {
     padding: 4em;
     opacity: 0.75;
     text-align: center;
@@ -40,11 +95,13 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    font-size: 120px;
+    font-size: 150px;
     letter-spacing: -0.05em;
     line-height: 1;
     margin: 0 auto;
     text-align: center;
+    margin-top: 320px;
+
 }
 
 h2 {
@@ -73,29 +130,8 @@ h2 {
     width: 100%;
 }
 
-.img {
-    width: 450px;
-    height: 250px;
-    margin-bottom: 10px;
-}
 
-.next-page-button {
-    position: fixed;
-    right: 100px;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-    font-size: 70px;
-    color: #cecece;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    opacity: 0.7;
-}
 
-.next-page-button:hover {
-    opacity: 1;
-    transform: translateY(-50%) rotate(90deg) scale(1.2);
-}
 
 
 /* Media query for responsiveness */
