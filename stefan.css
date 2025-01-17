@@ -527,8 +527,8 @@ h2 {
     /*350px*/
 
     .circle-background {
-        width: 800px;
-        height: 800px;
+        width: 750px;
+        height: 750px;
         top: 22px;
     }
 
@@ -543,10 +543,15 @@ h2 {
         left: 20px;
     }
 
+    .stefan {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .logo,
     .logo2 {
         width: 60px;
-        left: -5px;
+        left: -2px;
         top: -3px;
     }
 
