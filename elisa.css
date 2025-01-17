@@ -569,24 +569,24 @@ input[type="radio"] {
 
 
     .text-content {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .description {
-        font-size: 10px;
-        width: 100%;
+        font-size: 15px;
+        width: 50px;
     }
 
     .logo,
     .logo2 {
         width: 60px;
-        margin-left: 30px;
-        margin-top: 10px;
+        margin-left: 10px;
+        margin-top: 5px;
     }
 
     .social-icons {
-        margin-top: 80px;
-        margin-left: 30px;
+        margin-top: 140px;
+        margin-left: 70px;
     }
 
     .social-icons img {
