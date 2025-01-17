@@ -151,6 +151,8 @@ body {
     position: absolute;
     top: 50px;
     right: 10px;
+    background-color: #e7e4d1;
+
 
 }
 
@@ -381,40 +383,4 @@ h2 {
     height: 100%;
     position: relative;
     overflow: hidden;
-}
-
-
-
-
-
-
-
-/* for mobile */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin-bottom: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .carousel {
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .image-frame {
-        height: 300px;
-        /* Smaller height for mobile */
-    }
 }
