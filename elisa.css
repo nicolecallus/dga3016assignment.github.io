@@ -244,10 +244,10 @@ h2 {
 
 .description {
     text-align: justify;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     font-weight: normal;
     color: #333;
-    max-width: 120%;
+    max-width: 125%;
     margin-left: -20rem;
     margin-right: -20rem;
     margin-top: 2rem;
@@ -488,58 +488,56 @@ input[type="radio"] {
 @media screen and (max-width: 768px) {
 
 
-    .centered-title {
-        margin-top: 4rem;
-    }
-
-
-
     .circle-background {
-        width: 400px;
-        height: 400px;
-        top: 30px;
+        width: 800px;
+        height: 800px;
+        top: 22px;
     }
 
 
-    .text-content {
-        font-size: 15px;
+    .centered-title {
+        font-size: 40px;
     }
 
     .description {
-        font-size: 10px;
-        width: 20%;
-        margin: 1rem auto;
+        font-size: 23px;
+        width: 900px;
     }
 
     .logo,
     .logo2 {
         width: 60px;
-    }
-
-
-    .logo {
-        left: 120px;
-    }
-
-    .logo2 {
-        left: 120px;
+        left: 5px;
+        top: -5px;
     }
 
     .social-icons {
-        top: 80px;
-        left: 30px;
+        top: 300px;
+        left: 180px;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
+        top: 40px;
+        left: 20px;
     }
 
     .child {
         min-width: 200px;
-        /* height: 350px;*/
+        height: 350px;
+        left: 50px;
+        top: 30px;
+
+    }
+
+
+    .main-scroll-div {
+        left: 50px;
+        top: 30px;
     }
 }
+
 
 
 
@@ -566,13 +564,13 @@ input[type="radio"] {
     .logo,
     .logo2 {
         width: 60px;
-        margin-left: -5px;
-        margin-top: -5px;
+        left: -5px;
+        top: -5px;
     }
 
     .social-icons {
-        margin-top: 300px;
-        margin-left: 180px;
+        top: 300px;
+        left: 180px;
     }
 
     .social-icons img {
@@ -585,14 +583,14 @@ input[type="radio"] {
     .child {
         min-width: 200px;
         height: 350px;
-        margin-left: 50px;
-        margin-top: 30px;
+        left: 5px;
+        top: 30px;
 
     }
 
 
     .main-scroll-div {
-        margin-left: 50px;
-        margin-top: 30px;
+        left: 50px;
+        top: 30px;
     }
 }
