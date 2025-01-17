@@ -562,9 +562,9 @@ input[type="radio"] {
 @media screen and (max-width: 480px) {
 
     .circle-background {
-        width: 400px;
-        height: 400px;
-        top: 30px;
+        width: 600px;
+        height: 600px;
+        top: 25px;
     }
 
 
@@ -581,7 +581,7 @@ input[type="radio"] {
     .logo2 {
         width: 60px;
         left: 80px;
-        top: 40px;
+        top: 10px;
     }
 
     .social-icons {
@@ -592,6 +592,8 @@ input[type="radio"] {
     .social-icons img {
         width: 40px;
         height: 40px;
+        top: 40px;
+        left: 20px;
     }
 
     .child {
