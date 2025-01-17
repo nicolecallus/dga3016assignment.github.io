@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: black;
 }
 
 
@@ -45,18 +46,39 @@ body {
     padding: 20px;
 }
 
+
 /* logo */
+.logo1 {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+}
+
+.logo1 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 .logo {
     width: 80px;
     height: auto;
     position: absolute;
-    left: 15px;
+    left: 240px;
+    top: 5px;
+
 }
 
 .logo img {
     width: 100%;
     height: auto;
 }
+
+
+
+
 
 .titles {
     text-align: center;
@@ -124,72 +146,69 @@ h2 {
     /* Hide on all other pages */
 }
 
-/* navbar */
-.navbar {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
 
-.hamburger {
-    display: block;
-    cursor: pointer;
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     padding: 10px;
 }
 
-.bar {
-    display: block;
-    width: 25px;
+.navbar-toggler {
+    border: none;
+    background: none;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
     height: 3px;
-    margin: 5px;
     background-color: #e7e4d1;
-    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
 }
 
-.nav-menu {
-    position: fixed;
-    right: -100%;
-    top: 70px;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    transition: 0.3s;
-    list-style: none;
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #e7e4d1;
+    position: absolute;
+    left: 0;
 }
 
-.nav-menu.active {
-    right: 20px;
+.navbar-toggler-icon::before {
+    top: -8px;
 }
 
-.nav-item {
-    margin: 15px 0;
+.navbar-toggler-icon::after {
+    bottom: -8px;
 }
 
-.nav-link {
-    color: #e7e4d1;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: 0.3s;
+.navbar-collapse {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #e7e4d1 !important;
+    font-size: 1rem;
+    text-align: left;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
     color: #e7e4d1;
 }
 
-/* Hamburger animation */
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
 
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
 
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
+
+
 
 
 
