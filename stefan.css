@@ -539,7 +539,7 @@ h2 {
 
     .description {
         font-size: 15px;
-        width: 800px;
+        width: 850px;
         left: 20px;
     }
 
@@ -577,12 +577,12 @@ h2 {
 
     .main-scroll-div {
         left: 50px;
-        top: 150px;
+        top: 50px;
     }
 
     .main-scroll-div-right {
         left: 50px;
-        top: 30px;
+        top: 90px;
     }
 }
 
