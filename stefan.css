@@ -384,20 +384,47 @@ h2 {
 }
 
 
-
-
-
-
-
-/* for mobile */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .circle-background {
+        width: 700px;
+        height: 700px;
     }
 
-    .logo {
-        margin-bottom: 20px;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .description {
+        font-size: 1.4rem;
+    }
+
+    .social-icons {
+        top: 100px;
+        right: 50px;
+    }
+
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .child {
+        min-width: 250px;
+        height: 350px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .circle-background {
+        width: 400px;
+        height: 400px;
+        top: 10%;
     }
 
     h1 {
@@ -408,13 +435,70 @@ h2 {
         font-size: 1.2rem;
     }
 
-    .carousel {
-        margin-left: 5%;
-        width: 90%;
+    .description {
+        font-size: 1.1rem;
+        padding: 0 20px;
     }
 
-    .image-frame {
+    .social-icons {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo,
+    .logo2 {
+        width: 60px;
+    }
+
+    .navbar-toggler {
+        padding: 6px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    .child {
+        min-width: 200px;
         height: 300px;
-        /* Smaller height for mobile */
+    }
+
+    .text-content {
+        margin-top: 80px;
+        padding: 0 5%;
     }
 }
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .circle-background {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .child {
+        min-width: 180px;
+        height: 250px;
+    }
+}
+
+Last edited 1 minute ago
