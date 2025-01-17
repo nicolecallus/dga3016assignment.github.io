@@ -274,8 +274,8 @@ h2 {
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    top: 670px;
-    left: -170px;
+    top: 650px;
+    left: -65px;
 }
 
 
@@ -288,8 +288,8 @@ h2 {
     margin: 20px auto;
     padding: 20px 0;
     position: relative;
-    top: 550px;
-    left: 170px;
+    top: 517px;
+    left: 60px;
 
 }
 
@@ -512,15 +512,14 @@ input[type="radio"] {
     }
 
     .social-icons {
-        top: 300px;
-        left: 180px;
+        top: 170px;
+        left: 230px;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 20px;
+
     }
 
     .child {
@@ -533,8 +532,13 @@ input[type="radio"] {
 
 
     .main-scroll-div {
-        left: 50px;
-        top: 30px;
+        left: -55px;
+        top: 650px;
+    }
+
+    .main-scroll-div-right {
+        left: 60px;
+        top: 517px;
     }
 }
 
@@ -543,7 +547,7 @@ input[type="radio"] {
 
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
 
     .circle-background {
         width: 800px;
