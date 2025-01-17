@@ -500,19 +500,62 @@ input[type="radio"] {
 
 
 @media screen and (max-width: 768px) {
-    .logo2 {
-        left: 120px;
-    }
 
-    .description {
-        margin: 1rem auto;
-    }
 
     .centered-title {
         margin-top: 4rem;
     }
 
+
+
+    .circle-background {
+        width: 400px;
+        height: 400px;
+        top: 30px;
+    }
+
+
+    .text-content {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 10px;
+        width: 20%;
+        margin: 1rem auto;
+    }
+
+    .logo,
+    .logo2 {
+        width: 60px;
+    }
+
+
+    .logo {
+        left: 120px;
+    }
+
+    .logo2 {
+        left: 120px;
+    }
+
+    .social-icons {
+        top: 80px;
+        left: 30px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .child {
+        min-width: 200px;
+        /* height: 350px;*/
+    }
 }
+
+
 
 
 
