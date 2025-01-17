@@ -412,7 +412,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 601px) and (orientation: portrait) {
     .wrapper-main {
         width: 100%;
 
