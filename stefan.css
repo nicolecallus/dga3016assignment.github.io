@@ -385,19 +385,34 @@ h2 {
 
 
 
-
-
-
-
-/* for mobile */
+/* Mobile styles */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
+
+    .container,
+    .container2,
+    .container3 {
+        height: auto;
+        padding: 10px;
     }
 
-    .logo {
-        margin-bottom: 20px;
+    .circle-background {
+        width: 500px;
+        height: 500px;
+        top: 10%;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        padding: 3px 5px;
     }
 
     h1 {
@@ -408,13 +423,78 @@ h2 {
         font-size: 1.2rem;
     }
 
-    .carousel {
-        margin-left: 5%;
-        width: 90%;
+    .stefan img {
+        max-width: 100%;
+        transform: translateY(10px);
     }
 
-    .image-frame {
+    .description {
+        font-size: 1rem;
+        padding: 0 10px;
+        margin: 1rem 0;
+    }
+
+    .scroll-images {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .child {
+        min-width: 250px;
         height: 300px;
-        /* Smaller height for mobile */
+    }
+
+    .child-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .icon {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .container,
+    .container2,
+    .container3 {
+        padding: 20px;
+    }
+
+    .circle-background {
+        width: 700px;
+        height: 700px;
+        top: 5%;
+    }
+
+    .social-icons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        margin: 1rem 5%;
+    }
+
+    .child {
+        min-width: 300px;
+        height: 400px;
+    }
+
+    .child-img {
+        width: 300px;
+        height: 400px;
     }
 }
