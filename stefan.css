@@ -395,6 +395,11 @@ h2 {
         width: 900px;
     }
 
+    .stefan {
+        width: 110%;
+        height: 110%;
+        margin-left: -20px;
+    }
 
     h1 {
         font-size: 2.4rem;
@@ -414,7 +419,7 @@ h2 {
 
     .social-icons {
         top: 130px;
-        left: 200px;
+        left: 220px;
     }
 
     .social-icons img {
