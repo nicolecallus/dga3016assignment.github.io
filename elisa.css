@@ -580,13 +580,13 @@ input[type="radio"] {
     .logo,
     .logo2 {
         width: 60px;
-        margin-left: 5px;
-        margin-top: 5px;
+        margin-left: -5px;
+        margin-top: -5px;
     }
 
     .social-icons {
-        margin-top: 140px;
-        margin-left: 70px;
+        margin-top: 250px;
+        margin-left: 130px;
     }
 
     .social-icons img {
