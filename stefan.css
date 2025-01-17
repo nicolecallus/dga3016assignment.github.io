@@ -408,12 +408,11 @@ h2 {
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     .wrapper-main {
         width: 100%;
-        background-color: blue;
+        background-color: red;
     }
 }
 
-
-@media only screen and (max-width: 601px) and (orientation: portrait) {
+@media only screen and (max-width: 601px) {
     .wrapper-main {
         width: 100%;
         background-color: red;
