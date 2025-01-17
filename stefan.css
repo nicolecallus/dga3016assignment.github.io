@@ -539,38 +539,43 @@ h2 {
 
     .description {
         font-size: 15px;
-        width: 900px;
+        width: 800px;
+        left: 20px;
     }
 
     .logo,
     .logo2 {
         width: 60px;
         left: -5px;
-        top: -5px;
+        top: -3px;
     }
 
     .social-icons {
-        top: 300px;
-        left: 180px;
+        top: 150px;
+        left: 150px;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 20px;
+
     }
 
     .child {
-        min-width: 200px;
+        width: 200px;
         height: 350px;
-        left: 5px;
-        top: 30px;
+        left: 10px;
+        top: 20px;
 
     }
 
 
     .main-scroll-div {
+        left: 50px;
+        top: 150px;
+    }
+
+    .main-scroll-div-right {
         left: 50px;
         top: 30px;
     }
