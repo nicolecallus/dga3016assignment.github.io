@@ -518,6 +518,10 @@ input[type="radio"] {
 
 @media screen and (max-width: 480px) {
 
+    .circle-background {
+        width: 300px;
+    }
+
     .logo,
     .logo2 {
         width: 60px;
@@ -537,7 +541,7 @@ input[type="radio"] {
     }
 
     .child {
-        min-width: 250px;
-        height: 350px;
+        min-width: 200px;
+        /* height: 350px;*/
     }
 }
