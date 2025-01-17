@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background: black;
 }
 
 
@@ -45,6 +46,8 @@ body {
     padding: 20px;
 }
 
+
+
 /* logo */
 .logo {
     width: 80px;
@@ -59,11 +62,27 @@ body {
 }
 
 
+/* logo2 */
+.logo2 {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 230px;
+}
+
+.logo2 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 /*social icons*/
 .social-icons {
     position: absolute;
     top: 150px;
-    left: 790px;
+    left: 795px;
     z-index: 1000;
     display: flex;
     gap: 5px;
@@ -79,15 +98,15 @@ body {
 
 
 
-/* Navbar */
+
+
+/* navbar */
 .navbar {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
     padding: 10px;
-
-
 }
 
 .navbar-toggler {
