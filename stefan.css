@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background: black;
+}
+
+.wrapper-main {
+    width: 1000px;
+    padding: 100px 0;
+    margin: 0 auto;
+    border: 4px solid blue;
 }
 
 
@@ -387,228 +395,43 @@ h2 {
 }
 
 
-/* Mobile-first base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background: black;
-    overflow-x: hidden;
-}
 
-/* Small phones (up to 375px) */
-@media only screen and (max-width: 375px) {
-    h1 {
-        font-size: 1.5rem;
-    }
 
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .logo,
-    .logo2 {
-        width: 50px;
-    }
-
-    .social-icons img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .description {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
-
-    .child {
-        min-width: 250px;
-        height: 350px;
-        left: 20px;
-    }
-
-    .navbar-collapse {
-        width: 180px;
-    }
-}
-
-/* Medium phones (376px - 576px) */
-@media only screen and (min-width: 376px) and (max-width: 576px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    .logo,
-    .logo2 {
-        width: 55px;
-    }
-
-    .social-icons img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .description {
-        font-size: 1.1rem;
-        padding: 0 20px;
-    }
-
-    .child {
-        min-width: 280px;
-        height: 380px;
-        left: 30px;
-    }
-}
-
-/* Large phones/Small tablets (577px - 767px) */
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-    .circle-background {
-        width: 120vw;
-        height: 120vw;
-        top: -10%;
-    }
-
-    .header {
-        padding: 15px;
-    }
-
-    .logo,
-    .logo2 {
-        width: 60px;
-        margin-bottom: 15px;
-    }
-
-    .social-icons {
-        top: 25px;
-        right: 25px;
-    }
-
-    .social-icons img {
-        width: 40px;
-        height: 40px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    .stefan img {
-        transform: translateY(30px);
-    }
-
-    .description {
-        font-size: 1.3rem;
-        padding: 0 30px;
-        margin: 1.5rem 0;
-    }
-
-    .centered-title {
-        margin-top: 4rem;
-    }
-
-    .child {
-        min-width: 300px;
-        height: 400px;
-        left: 40px;
-    }
-
-    .main-scroll-div {
-        top: 350px;
-    }
-
-    .main-scroll-div-right {
-        top: 250px;
-    }
-}
-
-/* Mobile-specific adjustments */
-@media only screen and (max-width: 767px) {
-
-    .container,
-    .container2,
-    .container3 {
-        min-height: 100vh;
-        height: auto;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .titles {
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+    .wrapper-main {
         width: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    .navbar-collapse {
-        right: 0;
-        width: 200px;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 12px 20px;
-        font-size: 1.1rem;
-    }
-
-    .scroll-images {
-        gap: 8px;
-        padding: 8px;
-    }
-
-    .icon {
-        font-size: 40px;
-        padding: 0 15px;
-    }
-
-    /* Adjust photo gallery position */
-    .main-scroll-div,
-    .main-scroll-div-right {
-        width: 95%;
-        margin: 10px auto;
-    }
-
-    /* Fix social icons position */
-    .social-icons {
-        position: fixed;
-        gap: 10px;
-    }
-
-    /* Adjust margins for text content */
-    .text-content {
-        margin: 0;
-        padding: 15px;
-    }
-
-    .description {
-        margin: 1rem 0;
-        text-align: left;
-    }
-
-    /* Fix navigation menu */
-    .navbar-toggler {
-        margin: 10px;
-    }
-
-    .navbar-collapse {
-        background-color: rgba(231, 228, 209, 0.95);
-        backdrop-filter: blur(5px);
+        background-color: orange;
     }
 }
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .wrapper-main {
+        width: 100%;
+        background-color: blue;
+    }
+}
+
+
+@media only screen and (max-width: 601px) and (orientation: portrait) {
+    .wrapper-main {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-main {
+        width: 100%;
+        background-color: green;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .wrapper-main {
+        width: 100%;
+        background-color: purple;
+    }
+}
+
+/* ,600px, 601px, 768px, 992px, 1200px */
