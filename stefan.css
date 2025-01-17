@@ -466,12 +466,12 @@ h2 {
     }
 
     .centered-title {
-        font-size: 45px;
-        margin-top: 5rem;
+        font-size: 2rem;
+        margin-top: 5px;
     }
 
     .description {
-        font-size: 1.8rem;
+        font-size: 1rem;
         width: 100%;
         margin-left: -10rem;
         margin-right: -10rem;
