@@ -235,8 +235,6 @@
         }
 
 
-
-
         .artists-text {
             flex: 1;
             max-width: 40%;
@@ -257,6 +255,24 @@
             font-size: 1.2rem;
             line-height: 1.5;
         }
+
+
+        .social-icons {
+            position: absolute;
+            right: 10px;
+            z-index: 1000;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+
 
         /* Responsive Media Query for Small Devices */
         @media (max-width: 768px) {
@@ -424,6 +440,15 @@
                 and technology, pushing the boundaries of what’s possible.
             </p>
         </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
     </div>
 
     <!-- JavaScript for About Slideshow -->
