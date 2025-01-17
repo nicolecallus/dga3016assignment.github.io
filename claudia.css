@@ -79,6 +79,7 @@ body {
 
 
 /*social icons*/
+
 .social-icons {
     position: absolute;
     top: 150px;
@@ -90,11 +91,11 @@ body {
 
 .social-icons img {
     width: 70px;
-    height: 7x0px;
+    height: 70px;
     filter: invert(100%);
     cursor: pointer;
-}
 
+}
 
 
 

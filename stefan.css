@@ -81,7 +81,7 @@ body {
 .social-icons {
     position: absolute;
     top: 150px;
-    left: 795px;
+    left: 790px;
     z-index: 1000;
     display: flex;
     gap: 5px;
@@ -92,6 +92,7 @@ body {
     height: 70px;
     filter: invert(100%);
     cursor: pointer;
+
 }
 
 /* navbar */
