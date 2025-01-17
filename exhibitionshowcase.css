@@ -334,99 +334,44 @@ body {
 @media screen and (max-width: 768px){
     #heading .content h1 {
         font-size: 2.5rem;
-       
         letter-spacing: 3px;
-        
     }
 
     .text h2 {
         font-size: 32px;
-        color: #e7e4d1;
-        margin-bottom: 15px;
-        transform: translateY(20px);
-        transition: transform 0.6s ease;
-        width: 100%
     }
     
     .text p {
         font-size: 16px;
-        color: #fff;
-        transform: translateY(20px);
-        transition: transform 0.6s ease;
-        width: 100%
     }
 
 
     .main-scroll-div {
         width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 20px auto;
         padding: 10px 0;
-        position: relative;
-
     }
 
     .cover {
-        position: relative;
         width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
     }
 
     .cover::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 99;
-        height: 100%;
         width: 50px;
-        background-image: linear-gradient(90deg, black, transparent);
-        pointer-events: none;
     }
 
     .cover::after {
-        position: absolute;
-        content: "";
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 99;
-        height: 100%;
         width: 50px;
-        background-image: linear-gradient(-90deg, black, transparent);
-        pointer-events: none;
     }
 
 
     .child {
         min-width: 250px;
-        height: auto;
-        margin: 1px 10px;
-        position: relative;
-        cursor: pointer;
-        border: 1px solid rgba(207, 201, 201, 0.3);
-        overflow: hidden;
-        display: block;
     }
 
 
     .icon {
-        color: #e7e4d1;
-        background-color: black;
         font-size: 30px;
-        outline: none;
-        border: none;
         padding: 0px 10px;
-        cursor: pointer;
-        z-index: 100;
-        position: relative;
     }
 
     .navbar-collapse {
@@ -459,56 +404,28 @@ body {
 @media screen and (max-width: 480px){
     #heading .content h1 {
         font-size: 2rem;
-        font-weight: bold;
         letter-spacing: 2px;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 0;
-        padding: 0;
     }
 
 
 
     .content {
-        position: relative;
-        background-color: #e7e4d1;
-        width: 100%;
         padding: 10px;
         min-height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 
 
     .logo{
         width: 60px;
-        height: auto;
-        position: absolute;
-        left: 15px;
     }
 
     .child {
         min-width: 200px;
-        height: auto;
         margin: 1px 5px;
-        position: relative;
-        cursor: pointer;
-        border: 1px solid rgba(207, 201, 201, 0.3);
-        overflow: hidden;
-        display: block;
     }
 
     .scroll-images {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        overflow: auto;
-        position: relative;
-        scroll-behavior: smooth;
         gap: 10px;
         padding: 10px;
     }
