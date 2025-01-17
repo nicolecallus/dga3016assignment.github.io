@@ -519,8 +519,9 @@ input[type="radio"] {
 @media screen and (max-width: 480px) {
 
     .circle-background {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
+        top: 30px;
     }
 
 
@@ -529,7 +530,8 @@ input[type="radio"] {
     }
 
     .description {
-        font-size: 16px;
+        font-size: 10px;
+        width: 20%;
     }
 
     .logo,
