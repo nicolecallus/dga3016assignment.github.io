@@ -258,7 +258,7 @@ body {
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     #heading .content h1 {
         font-size: 2.5rem;
         letter-spacing: 3px;
@@ -267,7 +267,7 @@ body {
     .text h2 {
         font-size: 32px;
     }
-    
+
     .text p {
         font-size: 16px;
     }
@@ -307,28 +307,29 @@ body {
         border-radius: 4px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         width: 200px;
-      }
-      
-      .navbar-nav .nav-link {
+    }
+
+    .navbar-nav .nav-link {
         padding: 10px 15px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      }
-      
-      .navbar-nav .nav-item:last-child .nav-link {
+    }
+
+    .navbar-nav .nav-item:last-child .nav-link {
         border-bottom: none;
-      }
-      body {
+    }
+
+    body {
         overflow-x: hidden;
-      }
-      
-      .container {
+    }
+
+    .container {
         overflow-x: hidden;
-      }
+    }
 }
 
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     #heading .content h1 {
         font-size: 2rem;
         letter-spacing: 2px;
@@ -341,7 +342,7 @@ body {
     }
 
 
-    .logo{
+    .logo {
         width: 60px;
     }
 

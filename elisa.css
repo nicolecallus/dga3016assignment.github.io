@@ -499,58 +499,45 @@ input[type="radio"] {
 
 
 
-
-/* for mobile */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 768px) {
+    .logo2 {
+        left: 120px;
     }
 
-    /* Navbar Adjustments */
-    .navbar {
-        padding: 5px;
+    .description {
+        margin: 1rem auto;
     }
 
-    .navbar-toggler-icon {
-        width: 25px;
-        height: 3px;
+    .centered-title {
+        margin-top: 4rem;
     }
 
-    .logo {
-        margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .logo,
+    .logo2 {
+        width: 60px;
     }
 
-    h1 {
-        font-size: 2rem;
+    .logo2 {
+        left: 80px;
     }
 
-    h2 {
-        font-size: 1.2rem;
+    .social-icons {
+        top: 80px;
     }
 
-    .carousel {
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .image-frame {
-        height: 300px;
-        /* Smaller height for mobile */
-    }
-
-    .nav-button {
-        padding: 12px;
+    .social-icons img {
         width: 40px;
         height: 40px;
-        font-size: 16px;
     }
 
-    .prev {
-        left: 10px;
-    }
-
-    .next {
-        right: 10px;
+    .child {
+        min-width: 250px;
+        height: 350px;
     }
 }
