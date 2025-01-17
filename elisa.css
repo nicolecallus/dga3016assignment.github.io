@@ -520,6 +520,7 @@ input[type="radio"] {
 
     .circle-background {
         width: 300px;
+        height: 300px;
     }
 
 
@@ -534,6 +535,11 @@ input[type="radio"] {
     .logo,
     .logo2 {
         width: 60px;
+    }
+
+
+    .logo {
+        left: 80px;
     }
 
     .logo2 {

@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const scrollContainer = document.querySelector(".scroll-images");
     const scrollAmount = 300;
