@@ -545,7 +545,7 @@ input[type="radio"] {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
 
     .circle-background {
         width: 800px;
