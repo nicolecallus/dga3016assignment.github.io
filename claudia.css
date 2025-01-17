@@ -401,6 +401,11 @@ h2 {
         width: 900px;
     }
 
+    .claudia {
+        width: 120%;
+        height: 120%;
+        margin-left: -50px;
+    }
 
     h1 {
         font-size: 2.4rem;
@@ -420,7 +425,7 @@ h2 {
 
     .social-icons {
         top: 130px;
-        left: 200px;
+        left: 220px;
     }
 
     .social-icons img {
