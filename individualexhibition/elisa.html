@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elisa.css">
+    <script defer src="elisa.js"></script>
+    <title>Elisa Carabott - Out of the ordinary</title>
+</head>
+
+<body>
+
+    <!-- Page 1 -->
+    <div class="container">
+        <div class="circle-background"></div>
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <div class="titles">
+                    <h1>Elisa Carabott</h1>
+                    <h2>Out of the ordinary</h2>
+                </div>
+            </div>
+            <div class="elisa">
+                <img src="elisacrabott.png" alt="Elisa Carabott">
+            </div>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#Exhibition Showcase" class="nav-link">Exhibition Showcase</a></li>
+                    <li class="nav-item"><a href="#Individual Exhibition" class="nav-link">Individual Exhibition</a>
+                    </li>
+                    <li class="nav-item"><a href="#Sponsors" class="nav-link">Sponsors</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section id="page1" class="page">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+
+    <!-- Page 2 -->
+    <section id="page2" class="page">
+        <div class="container2">
+            <div class="content">
+                <div class="header">
+                    <div class="logo">
+                        <img src="logoblack.png" alt="logo">
+                    </div>
+
+                    <div class="text-content">
+                        <h1 class="centered-title">Out of the ordinary</h1>
+                        <div class="description">
+                            <p>
+                                "Out of the Ordinary" by Elisa Carabott is a captivating exploration of beauty in the
+                                mundane,
+                                transforming a traditional still life of flowers into a vibrant and dynamic composition.
+                                Combining intricate details and striking colors, the artwork blurs the boundaries
+                                between
+                                natural forms and digital interpretation, inviting viewers to find extraordinary wonder
+                                in
+                                everyday subjects. Through this piece, Carabott celebrates the resilience and complexity
+                                of
+                                nature while reflecting on the transformative power of art and technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section id="page3" class="page">
+        <div class="container3">
+            <div class="content">
+                <div class="header">
+                    <div class="logo">
+                        <img src="logo.png" alt="logo">
+                    </div>
+                </div>
+
+
+                <div class="main-scroll-div">
+                    <button class="icon left" id="left-arrow">&#10094;</button>
+                </div>
+                <div class="scroll-images">
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="e1.jpg" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="e2.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="e3.avif" alt="Stefan Mizzi Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="e4.avif" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="e5.jpeg" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="e6.jpeg" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-scroll-div-right">
+                    <button class="icon right" id="right-arrow">&#10095;</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

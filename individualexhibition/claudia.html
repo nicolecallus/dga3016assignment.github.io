@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="claudia.css">
+    <script defer src="claudia.js"></script>
+    <title>Claudia Agius - Out of the ordinary</title>
+
+
+</head>
+<style>
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+        bottom: -8px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-size: 1rem;
+        text-align: left;
+        padding: 5px 10px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: #e7e4d1;
+    }
+</style>
+
+<body>
+
+    <!-- page 1 -->
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+    </div>
+
+
+    <div class="container">
+        <div class="circle-background"></div>
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+
+                <!-- Navbar from Spectra.html -->
+
+                <nav class="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#positions">Positions</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+
+                <div class="titles">
+                    <h1>Claudia Agius</h1>
+                    <h2>Roots beneath the surface</h2>
+                </div>
+            </div>
+            <div class="claudia">
+                <img src="claudiaagius.png" alt="Claudia Agius">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- page 2 -->
+    <div class="container2">
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="logoblack.png" alt="logo">
+                </div>
+                <div class="bar">
+                    <img src="barblack.png" alt="bar">
+                </div>
+
+                <div class="text-content">
+                    <h1 class="centered-title">Roots beneath the surface</h1>
+                    <div class="description">
+                        <p>
+                            "Roots Beneath the Surface" by Claudia Agius is an immersive installation that explores the
+                            hidden connections between nature, heritage, and humanity. Through glowing ceramic roots,
+                            suspended wooden sculptures etched with ancestral patterns, and projected visuals of natural
+                            and human cycles, Agius invites viewers to reflect on the invisible networks that sustain
+                            life and identity. The work is a tactile and sensory meditation on the fragility and
+                            resilience of the forces that connect us to our past and to one another.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- page 3 -->
+    <section id="page3" class="page">
+        <div class="container3">
+            <div class="content">
+                <div class="header">
+                    <div class="logo">
+                        <img src="logo.png" alt="logo">
+                    </div>
+                </div>
+
+
+                <div class="main-scroll-div">
+                    <button class="icon left" id="left-arrow">&#10094;</button>
+                </div>
+                <div class="scroll-images">
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c1.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c2.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c3.webp" alt="Stefan Mizzi Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c4.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c5.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-frame">
+                            <img class="child-img" src="c6.webp" alt="Elisa Carabott Exhibition">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-scroll-div-right">
+                    <button class="icon right" id="right-arrow">&#10095;</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
