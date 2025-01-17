@@ -555,12 +555,12 @@ input[type="radio"] {
 
 
     .centered-title {
-        font-size: 10px;
+        font-size: 70px;
     }
 
     .description {
         font-size: 15px;
-        width: 400px;
+        width: 300px;
     }
 
     .logo,
