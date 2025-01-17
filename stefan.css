@@ -375,6 +375,10 @@ h2 {
     overflow: hidden;
 }
 
+
+
+
+/* Desktop */
 @media screen and (max-width: 768px) {
 
 
@@ -453,6 +457,72 @@ h2 {
 
 
 
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .circle-background {
+        width: 900px;
+        height: 900px;
+        top: 10px;
+    }
+
+    .centered-title {
+        font-size: 45px;
+        margin-top: 5rem;
+    }
+
+    .description {
+        font-size: 1.8rem;
+        width: 100%;
+        margin-left: -10rem;
+        margin-right: -10rem;
+    }
+
+    .stefan {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .logo,
+    .logo2 {
+        width: 70px;
+        left: 10px;
+    }
+
+    .social-icons {
+        top: 140px;
+        left: 600px;
+    }
+
+    .social-icons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .child {
+        min-width: 280px;
+        height: 400px;
+        left: 200px;
+    }
+
+    .main-scroll-div {
+        left: -100px;
+        top: 660px;
+    }
+
+    .main-scroll-div-right {
+        left: 100px;
+        top: 530px;
+    }
+}
+
+
+
+
+
+
+
+
+/*Mobile*/
 @media screen and (max-width: 480px) {
     /*350px*/
 
