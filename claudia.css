@@ -380,7 +380,7 @@ h2 {
 
 
 
-
+/* Desktop */
 @media screen and (max-width: 768px) {
 
 
@@ -435,11 +435,16 @@ h2 {
     }
 
     .child {
-        min-width: 200px;
-        height: 350px;
+        min-width: 350px;
+        height: 500px;
         left: 50px;
-        top: 30px;
+        top: -5px;
 
+    }
+
+    .image-frame {
+        width: 100%;
+        height: 100%
     }
 
 
