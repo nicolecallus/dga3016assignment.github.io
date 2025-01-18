@@ -484,6 +484,11 @@ input[type="radio"] {
 }*/
 
 
+
+
+
+
+
 /* Desktop */
 @media screen and (max-width: 768px) {
 
@@ -565,15 +570,19 @@ input[type="radio"] {
 
 
 
-/*mobile*/
 
-@media screen and (max-width: 480px) {
+
+/*tablet*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px)) {
 
 
     .circle-background {
         width: 800px;
         height: 800px;
         top: 28px;
+        position: center;
     }
 
 
@@ -588,6 +597,7 @@ input[type="radio"] {
         width: 870px;
         position: center;
         margin-top: -10px;
+        margin-left: 5px;
     }
 
     .elisa {
@@ -623,7 +633,118 @@ input[type="radio"] {
 
 
     .social-icons {
-        top: 180px;
+        top: 200px;
+        left: 130px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        top: 40px;
+        left: 10px;
+    }
+
+    .child {
+        min-width: 200px;
+        height: 350px;
+        left: 5px;
+        top: -25px;
+    }
+
+    .child-img {
+        width: 20%;
+        height: 100%;
+
+    }
+
+    .image-frame {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .main-scroll-div {
+        left: -80px;
+        top: 525px;
+    }
+
+
+    .main-scroll-div-right {
+        left: 50px;
+        top: 390px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile*/
+
+@media screen and (max-width: 480px) {
+
+
+    .circle-background {
+        width: 800px;
+        height: 800px;
+        top: 28px;
+    }
+
+
+    .centered-title {
+        font-size: 35px;
+        margin-top: 55px;
+
+    }
+
+    .description {
+        font-size: 19px;
+        width: 870px;
+        position: center;
+        margin-top: -10px;
+    }
+
+    .elisa {
+        height: 100%;
+        width: 160%;
+        margin-left: -90px;
+        margin-top: -10px;
+    }
+
+    h1,
+    h2 {
+        margin-top: 25px;
+    }
+
+
+    .logo,
+    .logo2 {
+        width: 60px;
+        top: -15px;
+    }
+
+
+    .logo {
+        left: -24px;
+    }
+
+
+    .logo2 {
+        left: -10px;
+    }
+
+
+
+
+    .social-icons {
+        top: 200px;
         left: 160px;
     }
 
@@ -639,6 +760,12 @@ input[type="radio"] {
         height: 350px;
         left: 5px;
         top: -25px;
+    }
+
+    .child-img {
+        width: 20%;
+        height: 100%;
+
     }
 
     .image-frame {
