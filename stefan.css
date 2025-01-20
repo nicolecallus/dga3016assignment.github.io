@@ -580,6 +580,7 @@ h2 {
 
 /*mobile*/
 
+
 @media screen and (max-width: 480px) {
 
 
@@ -588,6 +589,7 @@ h2 {
         height: 800px;
         top: 28px;
     }
+
 
     .centered-title {
         font-size: 32px;
@@ -631,9 +633,12 @@ h2 {
         left: -10px;
     }
 
+
+
+
     .social-icons {
         top: 175px;
-        left: 160px;
+        left: 180px;
     }
 
     .social-icons img {
@@ -650,13 +655,11 @@ h2 {
         top: -25px;
     }
 
-
     .child-img {
         width: 100%;
         height: 100%;
 
     }
-
 
     .image-frame {
         width: 100%;
