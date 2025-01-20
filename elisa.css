@@ -744,8 +744,8 @@ input[type="radio"] {
 
 
     .social-icons {
-        top: 200px;
-        left: 160px;
+        top: 220px;
+        left: 120px;
     }
 
     .social-icons img {
@@ -754,6 +754,7 @@ input[type="radio"] {
         top: 40px;
         left: 20px;
     }
+
 
     .child {
         min-width: 200px;

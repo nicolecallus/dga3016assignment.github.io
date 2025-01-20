@@ -589,15 +589,14 @@ h2 {
         top: 28px;
     }
 
-
     .centered-title {
-        font-size: 35px;
-        margin-top: 55px;
+        font-size: 32px;
+        margin-top: 35px;
 
     }
 
     .description {
-        font-size: 19px;
+        font-size: 17px;
         width: 870px;
         position: center;
         margin-top: -10px;
