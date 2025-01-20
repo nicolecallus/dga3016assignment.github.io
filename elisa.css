@@ -593,7 +593,7 @@ input[type="radio"] {
     }
 
     .description {
-        font-size: 17px;
+        font-size: 18px;
         width: 870px;
         position: center;
         margin-top: -10px;
@@ -633,7 +633,7 @@ input[type="radio"] {
 
     .social-icons {
         top: 200px;
-        left: 80px;
+        left: 100px;
     }
 
     .social-icons img {

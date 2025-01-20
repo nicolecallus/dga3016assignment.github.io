@@ -485,7 +485,7 @@ h2 {
     }
 
     .description {
-        font-size: 17px;
+        font-size: 18px;
         width: 870px;
         position: center;
         margin-top: -10px;
@@ -525,7 +525,7 @@ h2 {
 
     .social-icons {
         top: 200px;
-        left: 80px;
+        left: 110px;
     }
 
     .social-icons img {
