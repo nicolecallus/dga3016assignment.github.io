@@ -479,17 +479,16 @@ h2 {
 
 
     .centered-title {
-        font-size: 35px;
-        margin-top: 55px;
+        font-size: 32px;
+        margin-top: 35px;
 
     }
 
     .description {
-        font-size: 19px;
+        font-size: 17px;
         width: 870px;
         position: center;
         margin-top: -10px;
-        margin-left: 5px;
     }
 
     .stefan {
@@ -526,7 +525,7 @@ h2 {
 
     .social-icons {
         top: 200px;
-        left: 130px;
+        left: 80px;
     }
 
     .social-icons img {
