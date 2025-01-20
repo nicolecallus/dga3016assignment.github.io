@@ -467,7 +467,7 @@ h2 {
 /*tablet*/
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px)) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .circle-background {
@@ -605,7 +605,7 @@ h2 {
 
     .stefan {
         height: 100%;
-        width: 155%;
+        width: 140%;
         margin-left: -75px;
         margin-top: -15px;
     }
