@@ -79,11 +79,13 @@ body {
 
 
 /*social icons*/
-
 .social-icons {
     position: absolute;
     top: 150px;
-    left: 795px;
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Offset by half width */
     z-index: 1000;
     display: flex;
     gap: 5px;
