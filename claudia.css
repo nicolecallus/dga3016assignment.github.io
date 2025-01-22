@@ -21,6 +21,7 @@ body {
 
 /* circle */
 .circle-background {
+    position: fixed;
     width: 970px;
     height: 970px;
     background: #e7e4d1;
