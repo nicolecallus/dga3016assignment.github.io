@@ -426,13 +426,9 @@ h2 {
 
     .social-icons {
         top: 130px;
-        left: 240px;
-    }
-
-    .social-icons img {
-        width: 70px;
-        height: 70px;
-
+        left: 50%;
+        /* Changed from 240px to 50% */
+        transform: translateX(-50%);
     }
 
     .child {
