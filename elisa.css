@@ -26,7 +26,7 @@ body {
     height: 970px;
     background: #e7e4d1;
     border-radius: 50%;
-    left: 50%;
+    left: 100%;
     top: -5%;
     transform: translateX(-50%);
 }
