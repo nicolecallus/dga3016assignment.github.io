@@ -666,17 +666,18 @@ h2 {
 
 
 
+
     .social-icons {
-        top: 175px;
-        left: 165px;
+        top: 185px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 20px;
     }
+
 
     .child {
         min-width: 200px;
