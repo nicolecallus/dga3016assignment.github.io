@@ -453,14 +453,14 @@ h2 {
     }
 
     .social-icons {
-        top: 130px;
-        left: 240px;
+        top: 130px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 70px;
         height: 70px;
-
     }
 
     .child {
