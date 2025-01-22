@@ -79,7 +79,6 @@ body {
 
 
 
-/*social icons*/
 .social-icons {
     position: absolute;
     top: 150px;
@@ -104,6 +103,31 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
+
+
+/*.social-icons {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    /* Center horizontally 
+    transform: translateX(-50%);
+     Offset by half width 
+    z-index: 1000;
+    display: flex;
+    gap: 5px;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+    cursor: pointer;
+
+}*/
 
 /* navbar */
 .navbar {

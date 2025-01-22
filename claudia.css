@@ -78,14 +78,43 @@ body {
 
 
 
-/*social icons*/
 .social-icons {
     position: absolute;
     top: 150px;
     left: 50%;
-    /* Center horizontally */
     transform: translateX(-50%);
-    /* Offset by half width */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*.social-icons {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    /* Center horizontally 
+    transform: translateX(-50%);
+     Offset by half width 
     z-index: 1000;
     display: flex;
     gap: 5px;
@@ -97,7 +126,7 @@ body {
     filter: invert(100%);
     cursor: pointer;
 
-}
+}*/
 
 
 
