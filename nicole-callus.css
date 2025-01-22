@@ -76,28 +76,6 @@ section p {
 }
 
 
-/* 
-.wave2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave2 svg {
-    position: relative;
-    display: block;
-    width: calc(112% + 1.3px);
-    height: 86px;
-}
-
-.wave2 .shape-fill {
-    fill: #6A0DAD;
-}
- */
-
 
 h1{
     color: white;
@@ -141,10 +119,6 @@ p{
 }
 
 
-
-
-
-  
   .social-media-icons{
     display: flex;
     justify-content: center;
