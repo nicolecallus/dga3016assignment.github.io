@@ -84,12 +84,17 @@ body {
     position: absolute;
     top: 150px;
     left: 50%;
-    /* Center horizontally */
     transform: translateX(-50%);
-    /* Offset by half width */
     z-index: 1000;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
+    width: fit-content;
+}
+
+.social-icons a {
+    display: inline-block;
 }
 
 .social-icons img {
@@ -97,7 +102,6 @@ body {
     height: 70px;
     filter: invert(100%);
     cursor: pointer;
-
 }
 
 
@@ -426,9 +430,13 @@ h2 {
 
     .social-icons {
         top: 130px;
-        left: 50%;
-        /* Changed from 240px to 50% */
-        transform: translateX(-50%);
+        left: 240px;
+    }
+
+    .social-icons img {
+        width: 70px;
+        height: 70px;
+
     }
 
     .child {
