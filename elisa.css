@@ -120,7 +120,7 @@ h2 {
 .social-icons {
     position: absolute;
     top: 150px;
-    left: 70%;
+    left: 50%;
     /* Center horizontally */
     transform: translateX(-50%);
     /* Offset by half width */
