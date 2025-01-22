@@ -22,11 +22,12 @@ body {
 /* circle */
 .circle-background {
     position: absolute;
+    /* Change from center */
     width: 970px;
     height: 970px;
     background: #e7e4d1;
     border-radius: 50%;
-    margin-left: 100%;
+    left: 50%;
     top: -5%;
     transform: translateX(-50%);
 }
@@ -275,15 +276,18 @@ h2 {
 }
 
 .description {
+    position: relative;
+    /* Change from center */
     text-align: justify;
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     font-weight: normal;
     color: #333;
-    max-width: 125%;
+    max-width: 120%;
     margin-left: -20rem;
     margin-right: -20rem;
     margin-top: 2rem;
 }
+
 
 
 
