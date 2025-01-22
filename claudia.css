@@ -29,7 +29,7 @@ body {
     left: 50%;
     top: -5%;
     transform: translateX(-50%);
-    z-index: 1;
+
 }
 
 .content {
