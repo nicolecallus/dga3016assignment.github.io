@@ -560,14 +560,14 @@ input[type="radio"] {
     }
 
     .social-icons {
-        top: 130px;
-        left: 240px;
+        top: 130px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 70px;
         height: 70px;
-
     }
 
     .child {
@@ -662,17 +662,15 @@ input[type="radio"] {
 
 
 
-
     .social-icons {
-        top: 200px;
-        left: 90px;
+        top: 215px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 10px;
     }
 
     .child {
@@ -775,15 +773,14 @@ input[type="radio"] {
 
 
     .social-icons {
-        top: 180px;
-        left: 165px;
+        top: 197px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 20px;
     }
 
 
