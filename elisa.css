@@ -81,6 +81,7 @@ body {
     text-align: center;
     flex-grow: 1;
     padding: 0 20px;
+    z-index: 2;
 }
 
 /* Elisa Carabott - title */
@@ -103,6 +104,7 @@ h2 {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    z-index: 2;
 }
 
 .elisa img {
@@ -116,11 +118,43 @@ h2 {
 
 
 
-/*social icons*/
 .social-icons {
     position: absolute;
     top: 150px;
-    left: 580px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*.social-icons {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    /* Center horizontally 
+    transform: translateX(-50%);
+     Offset by half width 
     z-index: 1000;
     display: flex;
     gap: 5px;
@@ -132,7 +166,7 @@ h2 {
     filter: invert(100%);
     cursor: pointer;
 
-}
+}*/
 
 
 #page1 .social-icons {
@@ -528,14 +562,14 @@ input[type="radio"] {
     }
 
     .social-icons {
-        top: 130px;
-        left: 200px;
+        top: 130px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 70px;
         height: 70px;
-
     }
 
     .child {
@@ -582,7 +616,6 @@ input[type="radio"] {
         width: 800px;
         height: 800px;
         top: 28px;
-        position: center;
     }
 
 
@@ -595,7 +628,6 @@ input[type="radio"] {
     .description {
         font-size: 18px;
         width: 870px;
-        position: center;
         margin-top: -10px;
     }
 
@@ -630,17 +662,15 @@ input[type="radio"] {
 
 
 
-
     .social-icons {
-        top: 200px;
-        left: 80px;
+        top: 215px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 10px;
     }
 
     .child {
@@ -706,7 +736,6 @@ input[type="radio"] {
     .description {
         font-size: 19px;
         width: 870px;
-        position: center;
         margin-top: -10px;
     }
 
@@ -743,15 +772,14 @@ input[type="radio"] {
 
 
     .social-icons {
-        top: 180px;
-        left: 147px;
+        top: 175px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 20px;
     }
 
 

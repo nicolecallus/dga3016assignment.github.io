@@ -79,11 +79,43 @@ body {
 
 
 
-/*social icons*/
 .social-icons {
     position: absolute;
     top: 150px;
-    left: 790px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*.social-icons {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    /* Center horizontally 
+    transform: translateX(-50%);
+     Offset by half width 
     z-index: 1000;
     display: flex;
     gap: 5px;
@@ -95,8 +127,7 @@ body {
     filter: invert(100%);
     cursor: pointer;
 
-}
-
+}*/
 
 /* navbar */
 .navbar {
@@ -422,14 +453,14 @@ h2 {
     }
 
     .social-icons {
-        top: 130px;
-        left: 220px;
+        top: 127px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 70px;
         height: 70px;
-
     }
 
     .child {
@@ -474,7 +505,6 @@ h2 {
         width: 800px;
         height: 800px;
         top: 28px;
-        position: center;
     }
 
 
@@ -487,7 +517,6 @@ h2 {
     .description {
         font-size: 18px;
         width: 870px;
-        position: center;
         margin-top: -10px;
     }
 
@@ -524,15 +553,14 @@ h2 {
 
 
     .social-icons {
-        top: 200px;
-        left: 70px;
+        top: 215px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 10px;
     }
 
     .child {
@@ -599,7 +627,6 @@ h2 {
     .description {
         font-size: 17px;
         width: 870px;
-        position: center;
         margin-top: -10px;
     }
 
@@ -635,17 +662,18 @@ h2 {
 
 
 
+
     .social-icons {
-        top: 175px;
-        left: 155px;
+        top: 170px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     .social-icons img {
         width: 40px;
         height: 40px;
-        top: 40px;
-        left: 20px;
     }
+
 
     .child {
         min-width: 200px;
