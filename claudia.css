@@ -21,7 +21,6 @@ body {
 
 /* circle */
 .circle-background {
-    position: absolute;
     width: 970px;
     height: 970px;
     background: #e7e4d1;
@@ -514,7 +513,6 @@ h2 {
         width: 800px;
         height: 800px;
         top: 28px;
-        position: center;
     }
 
 
@@ -527,7 +525,6 @@ h2 {
     .description {
         font-size: 18px;
         width: 870px;
-        position: center;
         margin-top: -10px;
     }
 
@@ -638,7 +635,6 @@ h2 {
     .description {
         font-size: 17px;
         width: 870px;
-        position: center;
         margin-top: -10px;
     }
 
